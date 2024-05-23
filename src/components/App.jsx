@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes, Link } from 'react-router-dom'
 import './App.css'
+import HomeScreen from '../screen/HomeScreen'
+import SearchScreen from '../screen/SearchScreen';
+import CookBookScreen from '../screen/CookBookScreen';
+import MenusScreen from '../screen/MenusScreen';
+import GroceriesScreen from '../screen/GroceriesScreen';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite c est toi  la tache</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Link to="/">home</Link>
+      <Link to="/search">Tu veux quoi ?</Link>
+      <Link to="/cookbook">Le livre de recettes de mamie</Link>
+      <Link to="/menus">On va planifier, quoi</Link>
+      <Link to="/groceries">Les courses tavu</Link>
+
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/search" element={<SearchScreen />} />
+        <Route path="/cookbook" element={<CookBookScreen />} />
+        <Route path="/menus" element={<MenusScreen />} />
+        <Route path="/groceries" element={<GroceriesScreen />} />
+      </Routes>
     </>
-  )
+  );
 }
 
 export default App
