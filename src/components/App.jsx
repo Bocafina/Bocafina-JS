@@ -7,6 +7,7 @@ import MenusScreen from '../screen/MenusScreen';
 import GroceriesScreen from '../screen/GroceriesScreen';
 import PageNotFound from '../screen/PageNotFound';
 
+
 function App() {
   
   return (
@@ -16,6 +17,8 @@ function App() {
       <Link to="/cookbook">Le livre de recettes de mamie</Link>
       <Link to="/menus">On va planifier, quoi</Link>
       <Link to="/groceries">Les courses tavu</Link>
+
+      
 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
