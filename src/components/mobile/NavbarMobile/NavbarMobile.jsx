@@ -9,28 +9,45 @@ const NavbarMobile = () => {
       <div className="navbar-mobile container-fluid">
         <Nav className="justify-content-around">
           <NavItem>
-            <Link to="/">
-              <img src="src\assets\svg\homeIcone.svg" alt="" />
+            <Link className="nav-link" to="/">
+              <div className="icon-container">
+                <img src="src\assets\svg\homeIcone.svg" alt="" />
+                <p>Acceuil</p>
+              </div>
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/cookbook">
-              <img src="src\assets\svg\searchIcone.svg" alt="" />
+            <Link className="nav-link" to="/search">
+              <div className="icon-container">
+                <img src="src\assets\svg\searchIcone.svg" alt="" />
+                <p>Recherche</p>
+              </div>
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/search">
-              <img src="src\assets\svg\cookbookIcone.svg" alt="" />
+            <Link className="nav-link" to="/cookbook">
+              <div className="icon-container">
+                <img src="src\assets\svg\cookbookIcone.svg" alt="" />
+                <p>Cookbook</p>
+              </div>
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/menus">
-              <img src="src\assets\svg\menusIcone.svg" alt="" />
+            <Link className="nav-link" to="/menus">
+              <div className="icon-container">
+               <img src="src\assets\svg\menusIcone.svg" alt="" />
+               <p>Planificateur</p> 
+              </div>
+              
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/groceries">
-              <img src="src\assets\svg\groceriesIcone.svg" alt="" />
+            <Link className="nav-link" to="/groceries">
+              <div className="icon-container">
+                 <img src="src\assets\svg\groceriesIcone.svg" alt="" />
+                 <p>Courses</p>
+              </div>
+             
             </Link>
           </NavItem>
         </Nav>
