@@ -1,9 +1,37 @@
 .navbar-mobile {
   background-color: #000000;
-  padding: 0.4rem 0;
+  padding: 0.7rem 0rem;
   position: fixed;
   left: 0;
   bottom: 0;
+  text-decoration: none;
+}
+
+.navbar-mobile .nav-link {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-mobile .icon-container {
+  margin: 0;
+  padding: 0;
+  height: 2.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-mobile .icon-container p {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.navbar-mobile .icon-container img {
+  max-height: 2rem;
+  max-height: auto;
 }
 
 @media (min-width: 769px) {
