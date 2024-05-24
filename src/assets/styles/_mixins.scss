@@ -1,0 +1,16 @@
+// exemple élément en absolute
+@mixin absolute-el ($top, $right, $bottom, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  transform: translate($x, $y);
+}
+
+// pseudo élement 
+@mixin absolute-el ($display, $pos, $content) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}

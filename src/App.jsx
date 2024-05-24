@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 
-import HomeScreen from '../screen/HomeScreen'
-import SearchScreen from '../screen/SearchScreen';
-import CookBookScreen from '../screen/CookBookScreen';
-import MenusScreen from '../screen/MenusScreen';
-import GroceriesScreen from '../screen/GroceriesScreen';
-import PageNotFound from '../screen/PageNotFound';
+import HomeScreen from './screen/HomeScreen'
+import SearchScreen from './screen/SearchScreen';
+import CookBookScreen from './screen/CookBookScreen';
+import MenusScreen from './screen/MenusScreen';
+import GroceriesScreen from './screen/GroceriesScreen';
+import PageNotFound from './screen/PageNotFound';
 
 import '../assets/styles/App.scss';
 
