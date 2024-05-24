@@ -5,6 +5,7 @@ import SearchScreen from '../screen/SearchScreen';
 import CookBookScreen from '../screen/CookBookScreen';
 import MenusScreen from '../screen/MenusScreen';
 import GroceriesScreen from '../screen/GroceriesScreen';
+import PageNotFoundScreen from "../screen/PageNotFoundScreen";
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cookbook" element={<CookBookScreen />} />
         <Route path="/menus" element={<MenusScreen />} />
         <Route path="/groceries" element={<GroceriesScreen />} />
+        <Route path="*" element={<PageNotFoundScreen />} />
       </Routes>
     </>
   );
