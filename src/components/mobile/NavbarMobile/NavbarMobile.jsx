@@ -1,24 +1,20 @@
-import './navbarMobile.scss'
-import { Link } from "react-router-dom";
-import  Nav  from "react-bootstrap/Nav";
-import { NavItem } from "react-bootstrap";
+import "./navbarMobile.scss";
+
+import Nav from "react-bootstrap/Nav";
+import NavbarMobileIcone from "./NavbarMobileIcone/NavbarMobileIcone";
 
 const NavbarMobile = () => {
   return (
     <>
-   
-      <Nav className="justify-content-center">
-        <NavItem>
-          <Link to="/">home</Link>  
-        </NavItem>
-        <NavItem>
-          <Link to="/search">Tu veux quoi ?</Link>  
-        </NavItem>
-        
-        <Link to="/cookbook">Le livre de recettes de mamie</Link>
-        <Link to="/menus">On va planifier, quoi</Link>
-        <Link to="/groceries">Les courses tavu</Link>
-      </Nav>
+      <div className="navbar-mobile container-fluid">
+        <Nav className="justify-content-around">
+          <NavbarMobileIcone icone="homeIcone.svg" name="Acceuil" to="/" />
+          <NavbarMobileIcone icone="searchIcone.svg" name="Recherche" to="/search" />
+          <NavbarMobileIcone icone="cookbookIcone.svg" name="CookBook" to="/cookbook" />
+          <NavbarMobileIcone icone="menusIcone.svg" name="Planificateur" to="/menus" />
+          <NavbarMobileIcone icone="groceriesIcone.svg" name="Courses" to="/groceries" />
+        </Nav>
+      </div>
     </>
   );
 };
