@@ -9,7 +9,7 @@
 }
 
 // pseudo élement 
-@mixin absolute-el ($display, $pos, $content) {
+@mixin pseudo-el ($display, $pos, $content) {
   content: $content;
   display: $display;
   position: $pos;

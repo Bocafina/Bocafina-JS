@@ -1,0 +1,61 @@
+@import "../../../assets/styles/App.scss";
+
+:root {
+	.row {
+		--bs-gutter-x: 0;
+	}
+}
+
+.wrapper {
+	background-color: $bgc-darkgrey;
+	color: $c-lightgrey;
+	width: 54vw;
+	height: 11vh;
+}
+// ($top, $right, $bottom, $left, $x, $y)
+.sizeWelcome {
+	font-size: 4vw;
+	@include absolute-el(0, 4%, null, null, null, null);
+}
+.sizeLogo {
+	img {
+		width: 34vw;
+		@include absolute-el(null, null, 5%, 4%, null, null);
+	}
+}
+.sizeHelloCat {
+	img {
+		height: 18vw;
+		@include absolute-el(null, -10%, -10%, null, null, null);
+	}
+}
+
+// Media queries for tablets
+@media (min-width: 568px) and (max-width: 767px) {
+	.wrapper {
+    width: 50vw;
+    height: 10vh;
+  }
+  .sizeLogo {
+		img {
+			width: 30vw;
+		}
+	}
+	.sizeHelloCat {
+		img {
+			height: 14vw;
+		}
+	}
+}
+@media (min-width: 690px) and (max-width: 991px) {
+	.sizeLogo {
+		img {
+			width: 28vw;
+		}
+	}
+	.sizeHelloCat {
+		img {
+			height: 12vw;
+		}
+	}
+}
