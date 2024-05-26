@@ -1,0 +1,16 @@
+.navbar-mobile {
+  background-color: #000000;
+  padding: 0.7rem 0rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 769px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
