@@ -5,13 +5,11 @@ import "./logo.scss";
 const Logo = () => {
 	return (
 		<>
-			<div className="logo-wrapper position-relative">
-				<div className="wrapper mt-3 ms-3 rounded-3 position-relative">
-					<Row className="sizeWelcome">
-            Bienvenue sur
-          </Row>
-					<Row className="d-flex flex-nowrap">
-						<Col className="ms-1 sizeLogo">
+			<div className="container-fluid">
+				<div className="wrapper mt-3 rounded-3 position-relative">
+					<Row className="sizeWelcome me-2 d-flex justify-content-end">Bienvenue sur</Row>
+					<Row className="flex-nowrap">
+						<Col className="ms-1 pb-2 sizeLogo">
 							<Image
 								className=""
 								src="../../src/assets/img/logo.png"
@@ -20,7 +18,6 @@ const Logo = () => {
 						</Col>
 						<Col className="sizeHelloCat">
 							<Image
-								className=""
 								src="../../src/assets/img/hello.png"
 								alt="Simon's cat hello"
 							/>
