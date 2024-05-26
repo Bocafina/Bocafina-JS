@@ -10,7 +10,7 @@
 	background-color: $bgc-darkgrey;
 	color: $c-lightgrey;
 	width: 54vw;
-	height: 11vh;
+	min-height: 80px;
 }
 // ($top, $right, $bottom, $left, $x, $y)
 .sizeWelcome {
@@ -25,16 +25,16 @@
 }
 .sizeHelloCat {
 	img {
-		height: 18vw;
+		height: 17vw;
 		@include absolute-el(null, -10%, -10%, null, null, null);
 	}
 }
 
 // Media queries for tablets
-@media (min-width: 568px) and (max-width: 767px) {
+@media (min-width: 540px) and (max-width: 767px) {
 	.wrapper {
     width: 50vw;
-    height: 10vh;
+    height: 100px;
   }
   .sizeLogo {
 		img {
@@ -43,19 +43,26 @@
 	}
 	.sizeHelloCat {
 		img {
-			height: 14vw;
+			height: 15vw;
 		}
 	}
 }
-@media (min-width: 690px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+		.wrapper {
+    width: 50vw;
+    height: 135px;
+  }
+	.sizeWelcome {
+	font-size: 3.5vw;
+}
 	.sizeLogo {
 		img {
-			width: 28vw;
+			width: 30vw;
 		}
 	}
 	.sizeHelloCat {
 		img {
-			height: 12vw;
+			height: 13.5vw;
 		}
 	}
 }
