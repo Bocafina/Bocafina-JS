@@ -6,7 +6,6 @@ import "./recipesCardDisplay.scss";
 
 const RecipesCardDisplay = (props) => {
   const hasHeader = props.isHomeScreen;
- 
   let header;
  
 
