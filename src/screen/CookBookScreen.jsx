@@ -1,7 +1,15 @@
+import SearchBar from "../components/common/SearchBar/SearchBar";
+import RecipesFiltersBar from "../components/common/RecipesFiltersBar/RecipesFiltersBar";
+
 export default function CookBookScreen() {
   return (
     <>
-      <h1>CookBook Page</h1>
+
+    <div className="container-fluid">
+      <SearchBar/>
+      <RecipesFiltersBar/>
+    </div>
+      
     </>
   );
 }
