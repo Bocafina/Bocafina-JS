@@ -4,6 +4,7 @@ import RecipesCardDisplay from "../components/common/RecipesCardDisplay/RecipesC
 export default function HomeScreen() {
   return (
     <>
+    
       <Logo />
 
       <RecipesCardDisplay
