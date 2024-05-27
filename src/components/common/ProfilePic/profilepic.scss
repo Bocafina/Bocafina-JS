@@ -1,0 +1,11 @@
+@import "../../../assets/styles/mixins.scss";
+
+// mixins example ($top, $right, $bottom, $left, $x, $y)
+.profilePicSize {
+img {
+  width: 20vw;
+  @include absolute-el(10%, null, null, null, -50%, -50%);
+}
+}
+
+

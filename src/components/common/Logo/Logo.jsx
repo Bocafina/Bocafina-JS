@@ -5,7 +5,6 @@ import "./logo.scss";
 const Logo = () => {
 	return (
 		<>
-			<div className="container-fluid">
 				<div className="wrapper mt-3 rounded-3 position-relative">
 					<Row className="sizeWelcome me-2 d-flex justify-content-end">Bienvenue sur</Row>
 					<Row className="flex-nowrap">
@@ -24,7 +23,6 @@ const Logo = () => {
 						</Col>
 					</Row>
 				</div>
-			</div>
 		</>
 	);
 };
