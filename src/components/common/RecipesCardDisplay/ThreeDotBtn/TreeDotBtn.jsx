@@ -1,16 +1,13 @@
-import './threeDotBtn.scss';
+import "./threeDotBtn.scss";
 
 const ThreeDotBtn = () => {
+	return (
+		<>
+			<button>
+				<img src="./src/assets/svg/threeDotBtnIcon.svg" alt="" />
+			</button>
+		</>
+	);
+};
 
-    return (
-        <>
-        <button>
-        <img src="./src/assets/svg/threeDotBtnIcon.svg" alt="" />
-
-        </button>
-        </>
-    )
-
-}
-
-export default ThreeDotBtn
+export default ThreeDotBtn;

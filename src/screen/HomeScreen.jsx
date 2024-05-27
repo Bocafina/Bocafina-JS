@@ -9,13 +9,13 @@ export default function HomeScreen() {
   return (
 		<>
 			<div className="container-fluid">
-				<div className="d-flex">
+				<div className="w-100 flex-between">
 					<div>
 						<Logo />
 					</div>
-					<div className="d-flex align-items-start justify-content-start">
+					<div className="sizeNotif">
 						<Image
-							className="mt-5  ms-2 w-50"
+							className="mt-1 ms-2"
 							src="../../src/assets/svg/notification-icon.svg"
 							alt="Notification icon"
 						/>
