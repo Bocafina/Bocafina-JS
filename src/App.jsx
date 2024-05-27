@@ -8,7 +8,7 @@ import GroceriesScreen from "./screen/GroceriesScreen";
 import PageNotFound from "./screen/PageNotFound";
 
 
-import "./assets/styles/App.scss";
+
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 
 function App() {
