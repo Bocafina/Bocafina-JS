@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import "./profilepic.scss";
+import "./profilePic.scss";
 
 const ProfilePic = (props) => {
 	return (

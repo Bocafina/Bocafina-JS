@@ -1,15 +1,15 @@
-import { Image, Row, Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 import ProfilePic from "../components/common/ProfilePic/ProfilePic";
 import Logo from "../components/common/Logo/Logo";
 import RecipesCardDisplay from "../components/common/RecipesCardDisplay/RecipesCardDisplay";
-import "./styles/homescreen.scss";
+import "./styles/homeScreen.scss";
 
 export default function HomeScreen() {
   return (
 		<>
 			<div className="container-fluid">
-				<div className="flex-nowrap">
+				<div className="d-flex">
 					<div>
 						<Logo />
 					</div>
