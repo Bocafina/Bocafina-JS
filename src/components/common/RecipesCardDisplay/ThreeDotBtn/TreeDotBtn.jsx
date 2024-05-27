@@ -1,3 +1,5 @@
+import './threeDotBtn.scss';
+
 const ThreeDotBtn = () => {
 
     return (
