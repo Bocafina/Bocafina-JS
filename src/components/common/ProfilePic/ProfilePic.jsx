@@ -1,7 +1,7 @@
 import { Image } from "react-bootstrap";
 import "./profilepic.scss";
 
-const ProfilePic = () => {
+const ProfilePic = (props) => {
 	return (
 		<>
 			<div className="profilePicSize me-2 d-flex position-relative">
@@ -15,7 +15,7 @@ const ProfilePic = () => {
 				<div className="profilePicCatSize">
 					<Image
 						className="zn-1"
-						src="../../src/assets/img/profilepiccat.png"
+						src={`../../src/assets/img/${props.profilePicSrc}`}
 						alt="Profile picture"
 					/>
 				</div>
