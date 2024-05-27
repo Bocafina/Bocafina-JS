@@ -4,6 +4,7 @@ import { NavItem } from "react-bootstrap";
 
 import "./navbarMobileIcon.scss";
 
+
 const NavbarMobileIcon = (props) => {
   return (
     <>
@@ -18,6 +19,7 @@ const NavbarMobileIcon = (props) => {
     </>
   );
 };
+
 
 
 export default NavbarMobileIcon;
