@@ -17,7 +17,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    // @TODO j'ai desactivé par ce que demande un type pour props si SAM chaud reactiver !
+    // @TODO j'ai desactivé parce que demande un type pour props si SAM chaud reactiver !
     "react/prop-types": "off"
   },
 }
