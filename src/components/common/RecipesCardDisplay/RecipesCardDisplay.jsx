@@ -13,7 +13,7 @@ const RecipesCardDisplay = (props) => {
 			<>
 				<Card.Header className="bg-primary">
 					<div className="recipes-card-section flex-between">
-
+            
 						<h5 className="text-secondary">{props.profilName}</h5>
 						<ThreeDotBtn />
 					</div>
