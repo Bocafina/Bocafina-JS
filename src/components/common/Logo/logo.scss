@@ -1,0 +1,34 @@
+@import "../../../assets/styles/App.scss";
+
+.wrapper {
+	background-color: $bgc-darkgrey;
+	color: $c-lightgrey;
+	width: 54vw;
+	min-height: 80px;
+}
+// mixins example ($top, $right, $bottom, $left, $x, $y)
+.sizeWelcome {
+	font-size: 4vw;
+}
+.sizeLogo {
+	img {
+		width: 34vw;
+		// @include absolute-el(null, null, 5%, 4%, null, null);
+	}
+}
+.sizeHelloCat {
+	img {
+		height: 17vw;
+		@include absolute-el(null, -10%, -10%, null, null, null);
+	}
+}
+
+// media queries
+@media (min-width: 260px) and (max-width: 360px) {
+	.wrapper {
+		min-height: 60px;
+	}
+	.sizeLogo {
+		margin-bottom: 1px;
+	}
+}
