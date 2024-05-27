@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import HomeScreen from "./screen/HomeScreen";
+import HomeScreen from "./screen/HomeScreen/HomeScreen";
 import SearchScreen from "./screen/SearchScreen";
 import CookBookScreen from "./screen/CookBookScreen";
 import MenusScreen from "./screen/MenusScreen";

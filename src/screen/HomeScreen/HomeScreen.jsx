@@ -1,9 +1,9 @@
 import { Image } from "react-bootstrap";
 
-import ProfilePic from "../components/common/ProfilePic/ProfilePic";
-import Logo from "../components/common/Logo/Logo";
-import RecipesCardDisplay from "../components/common/RecipesCardDisplay/RecipesCardDisplay";
-import "./styles/homeScreen.scss";
+import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
+import Logo from "../../components/common/Logo/Logo";
+import RecipesCardDisplay from "../../components/common/RecipesCardDisplay/RecipesCardDisplay";
+import "./homeScreen.scss";
 
 export default function HomeScreen() {
   return (
