@@ -1,2 +1,10 @@
-@import "./_reset.scss";
-@import "./custom.scss"
+@import './_mixins';
+@import './_placeholders';
+@import './reset';
+@import './_variables';
+
+// CSS global et media queries 
+
+body {
+  background-color: #000 !important;
+}

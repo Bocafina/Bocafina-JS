@@ -7,7 +7,7 @@ import MenusScreen from "./screen/MenusScreen";
 import GroceriesScreen from "./screen/GroceriesScreen";
 import PageNotFound from "./screen/PageNotFound";
 
-
+import "./assets/styles/App.scss";
 
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 
@@ -24,7 +24,6 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
-     
 
       <NavbarMobile />
     </>
