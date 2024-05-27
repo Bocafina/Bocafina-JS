@@ -1,4 +1,6 @@
-@import "../../../assets/styles/App.scss";
+@import "../../../assets/styles/mixins.scss";
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/reset.scss";
 
 .wrapper {
 	background-color: $bgc-darkgrey;
@@ -13,7 +15,6 @@
 .sizeLogo {
 	img {
 		width: 34vw;
-		// @include absolute-el(null, null, 5%, 4%, null, null);
 	}
 }
 .sizeHelloCat {
