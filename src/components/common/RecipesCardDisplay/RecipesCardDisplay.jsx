@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 
 import ThreeDotBtn from "./ThreeDotBtn/TreeDotBtn";
+import ProfilePic from "../ProfilePic/ProfilePic";
 
 import "./recipesCardDisplay.scss";
 
@@ -13,7 +14,7 @@ const RecipesCardDisplay = (props) => {
 			<>
 				<Card.Header className="bg-primary">
 					<div className="recipes-card-section flex-between">
-            
+						<ProfilePic className=""/>
 						<h5 className="text-secondary">{props.profilName}</h5>
 						<ThreeDotBtn />
 					</div>
