@@ -13,7 +13,7 @@ import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 function App() {
   return (
     <>
-      <div className="container text-center">
+      <div>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/search" element={<SearchScreen />} />

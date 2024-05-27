@@ -12,7 +12,7 @@ const ProfilePic = (props) => {
 						alt="Profile frame"
 					/>
 				</div>
-				<div className="profilePicCatSize">
+				<div className="profilePicCatSize ">
 					<Image
 						className="zn-1"
 						src={`../../src/assets/img/${props.profilePicSrc}`}

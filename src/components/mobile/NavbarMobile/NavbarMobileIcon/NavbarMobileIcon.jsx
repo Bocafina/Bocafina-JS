@@ -10,7 +10,7 @@ const NavbarMobileIcon = (props) => {
     <>
       <NavItem>
         <Link className="nav-link" to={props.to}>
-          <div className="icon-container">
+          <div className="icon-container flex-between">
             <img src={`src/assets/svg/${props.icon}`} alt={`image ${props.icon}`} />
             <p>{props.name}</p>
           </div>
