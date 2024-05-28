@@ -5,15 +5,17 @@
   margin: 0;
 }
 
-.navbar-mobile .icon-container {
+.navbar-mobile .icon-wrapper {
   height: 2.7rem;
   flex-direction: column;
-}
-.navbar-mobile .icon-container p {
+
+p {
   color: white;
   font-size: 0.7rem;
 }
 
-.navbar-mobile .icon-container img {
+img {
   max-height: 4rem;
+}
+
 }

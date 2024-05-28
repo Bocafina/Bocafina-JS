@@ -7,7 +7,7 @@ const NavbarMobile = () => {
   return (
     <>
       <div className="navbar-mobile container-fluid">
-        <Nav className="justify-content-around">
+        <Nav className="justify-content-around align-items-baseline">
           <NavbarMobileIcon icon="homeIcon.svg" name="Acceuil" to="/" />
           <NavbarMobileIcon icon="searchIcon.svg" name="Recherche" to="/search" />
           <NavbarMobileIcon icon="cookbookIcon.svg" name="CookBook" to="/cookbook" />
