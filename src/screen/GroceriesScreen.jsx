@@ -1,7 +1,12 @@
+import GroceriesList from "../components/common/GroceriesList/GroceriesList";
+
 export default function GroceriesScreen() {
   return (
     <>
-      <h1>Groceries Page</h1>
+    <div className="container-fluid">
+      <GroceriesList/>
+    </div>
+      
     </>
   );
 }
