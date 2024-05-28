@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <>
       <div className=" my-3 ">
-        <Form className="bg-primary rounded-pill" inline>
+        <Form className="bg-primary rounded-pill" >
           <InputGroup>
             <img className="m-2" src="./src/assets/svg/searchIcon.svg" alt="search Icon" />
             <Form.Control 
