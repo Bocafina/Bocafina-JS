@@ -1,0 +1,19 @@
+@import "../../../assets/styles/variables.scss";
+
+p {
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+ 
+    
+}
+
+.bg-groceries-list {
+    background-color: $primary;
+}
+
+.list-group-item {
+    background-color: $primary;
+    border: none !important;
+    
+}
