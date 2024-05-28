@@ -14,8 +14,10 @@ const RecipesCardDisplay = (props) => {
 			<>
 				<Card.Header className="bg-primary">
 					<div className="recipes-card-section flex-between">
-						<ProfilePic className=""/>
-						<h5 className="text-secondary">{props.profilName}</h5>
+						<div className="d-flex">
+							<ProfilePic profilePicSrc="profilepiccat.png" />
+							<h5 className="text-secondary">{props.profilName}</h5>
+						</div>
 						<ThreeDotBtn />
 					</div>
 				</Card.Header>
