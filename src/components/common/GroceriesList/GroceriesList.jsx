@@ -13,6 +13,7 @@ import "./groceriesList.scss";
 
 const GroceriesList = () => {
   let ingredientsList = ingredientsListData;
+  
 
   return (
     <>

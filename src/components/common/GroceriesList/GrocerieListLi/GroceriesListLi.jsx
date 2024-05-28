@@ -5,7 +5,7 @@ const GroceriesListLi = (props) => {
   const ingredientsArray = ingredientsList.ingredientsArray;
 
   const listGoupItem = ingredientsArray.map((ingredient) => (
-    <ListGroupItem key={ingredient.id} className="bg-primary text-secondary">
+    <ListGroupItem key={ingredient.id} className=" bg-primary text-secondary">
       <div className="d-flex justify-content-between">
         <div className="d-flex w-100">
           <img src={ingredient.src} alt="image ingrédient" />
