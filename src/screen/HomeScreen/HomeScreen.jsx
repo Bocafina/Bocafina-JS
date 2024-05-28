@@ -9,19 +9,19 @@ import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
 
 let homeScreenRecipes = homeScreenRecipesData;
 const RecipesList = homeScreenRecipes.map((recipes) => (
-	<>
+	
 		<RecipesCardDisplay
-		  key={recipes.id}
+			key={recipes.id}
 			isHomeScreen={true}
 			imageSrc={recipes.imageSrc}
 			profilName={recipes.profilName}
 			recipeTitle={recipes.recipeTitle}
 		/>
-	</>
+	
 ));
 
 export default function HomeScreen() {
-  return (
+	return (
 		<>
 			<div className="container-fluid">
 				<div className="w-100 flex-between">
@@ -41,8 +41,9 @@ export default function HomeScreen() {
 				</div>
 
 				{RecipesList}
-
 			</div>
 		</>
 	);
 }
+
+// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici 
