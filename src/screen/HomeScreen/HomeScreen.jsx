@@ -5,6 +5,21 @@ import Logo from "../../components/common/Logo/Logo";
 import RecipesCardDisplay from "../../components/common/RecipesCardDisplay/RecipesCardDisplay";
 import "./homeScreen.scss";
 
+import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
+
+let homeScreenRecipes = homeScreenRecipesData;
+const RecipesList = homeScreenRecipes.map((recipes) => (
+	<>
+		<RecipesCardDisplay
+		  key={recipes.id}
+			isHomeScreen={true}
+			imageSrc={recipes.imageSrc}
+			profilName={recipes.profilName}
+			recipeTitle={recipes.recipeTitle}
+		/>
+	</>
+));
+
 export default function HomeScreen() {
   return (
 		<>
@@ -25,26 +40,8 @@ export default function HomeScreen() {
 					</div>
 				</div>
 
-				<RecipesCardDisplay
-					isHomeScreen={true}
-					imageSrc="./src/assets/img/imgTest.png"
-					profilName="Nom de profil"
-					recipeTitle="Titre de la recette"
-				/>
+				{RecipesList}
 
-				<RecipesCardDisplay
-					isHomeScreen={true}
-					imageSrc="./src/assets/img/imgTest.png"
-					profilName="Nom de profil"
-					recipeTitle="Titre de la recette"
-				/>
-
-				<RecipesCardDisplay
-					isHomeScreen={true}
-					imageSrc="./src/assets/img/imgTest.png"
-					profilName="Nom de profil"
-					recipeTitle="Titre de la recette"
-				/>
 			</div>
 		</>
 	);
