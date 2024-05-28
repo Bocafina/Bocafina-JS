@@ -7,14 +7,14 @@ import "./listBtn.scss";
 const ListBtn = (props) => {
   return (
     <>
-    
+      <button>
         <ListGroup.Item className=" text-secondary listBtnStyle">
           <div className="flex-between">
             <span>{props.dayName}</span>
             <Image className="" src="../../src/assets/svg/rightarrowicon.svg" alt="Icone flèche vers la droite" />
           </div>
         </ListGroup.Item>
-      
+      </button>
     </>
   );
 };
