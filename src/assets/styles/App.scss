@@ -5,27 +5,34 @@
 @import './custom.scss';
 
 
-// CSS global et media queries 
+// CSS global, font, et media queries si nécessaire
 
 @font-face {
-font-family: "Gayathri";
+font-family: "Lato-regular";
 font-weight: 400;
-src:url("../../../public/font/gayathri-bold-webfont.woff2") format("woff2"),
-    url("../../../public/font/gayathri-bold-webfont.woff") format("woff");
-
+src: url("../font/Lato-Regular.ttf") format("truetype");
 }
+@font-face {
+font-family: "Lato-Bold";
+font-weight: 700;
+src: url("../font/Lato-Bold.ttf") format("truetype");
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 
 body {
   background-color: #000 !important;
-  font-family: "Gayathri", sans-serif;
+  font-family: "Lato-Regular", sans-serif;
+}
+
+// titres de nos card -- h4 réservé aux titres des pages
+h5 {
+  font-family: "Lato-Bold", sans-serif;
 }
 
 .flex-between {
   @extend %flex-between;
 }
-
-
-
-
-
-
