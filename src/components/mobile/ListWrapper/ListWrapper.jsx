@@ -6,7 +6,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 const ListWrapper = () => {
 	return (
 		<>
-			<div className="bg-primary p-2 m-3 rounded-2">
+			<div className="bg-primary p-2 m-3 rounded-2 listGroupColor">
 				<ListGroup variant="flush">
 					<ListBtn dayName="Lundi" />
 					<ListBtn dayName="Mardi" />
