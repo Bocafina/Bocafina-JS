@@ -11,7 +11,7 @@ const RecipesFiltersBar = () => {
 
   return (
     <>
-      <div className="flex-between">
+      <div className="flex-between mx-1">
         <RecipesFiltersBtn btnName="ingrédients" func={triIngredient} />
         <RecipesFiltersBtn btnName="difficulté" func={triIngredient}  />
         <RecipesFiltersBtn btnName="type de repas" func={triIngredient}  />
