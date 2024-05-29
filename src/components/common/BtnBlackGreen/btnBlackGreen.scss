@@ -1,3 +1,9 @@
-@import '../../../assets/styles/variables.scss';
+@import "../../../assets/styles/variables.scss";
 
-
+.btn-BG {
+  .btn.btn-primary {
+    font-size: 0.75rem !important;
+    --bs-btn-bg: none;
+   
+  }
+}
