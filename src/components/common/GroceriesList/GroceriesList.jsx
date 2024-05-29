@@ -1,19 +1,16 @@
-
 // TODO: Remplacer Local storage puis API quand back
-// 
-// 
+//
+//
 import { ingredientsListData } from "../../../data/groceriesListData";
-// 
+//
 
 import { Form } from "react-bootstrap";
 import GroceriesListLi from "./GrocerieListLi/GroceriesListLi";
 
 import "./groceriesList.scss";
 
-
 const GroceriesList = () => {
   let ingredientsList = ingredientsListData;
-  
 
   return (
     <>
