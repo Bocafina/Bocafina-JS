@@ -20,3 +20,7 @@ const ListBtn = (props) => {
 };
 
 export default ListBtn;
+
+// as="button". 
+// applique les styles et comportements du bouton tout en conservant
+// l'apparence et la fonctionnalité du ListGroup.Item.
