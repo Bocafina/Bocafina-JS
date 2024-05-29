@@ -11,7 +11,7 @@ const RecipesCardDisplay = (props) => {
 
   if (hasHeader) {
     header = (
-      <>
+      <> 
         <Card.Header className="bg-primary">
           <div className="recipes-card-section flex-between">
             <div className="d-flex align-items-center">
@@ -36,7 +36,8 @@ const RecipesCardDisplay = (props) => {
 
   return (
     <>
-      <Card>
+    <div className={props.className}>
+      <Card className={props.shadow}>
         {header}
         <Card.Footer className="bg-primary">
           <div className="recipes-card-section flex-between">
@@ -47,6 +48,8 @@ const RecipesCardDisplay = (props) => {
           </div>
         </Card.Footer>
       </Card>
+    </div>
+      
     </>
   );
 };
