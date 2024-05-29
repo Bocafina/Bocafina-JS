@@ -28,6 +28,11 @@ body {
   font-family: "Lato-Regular", sans-serif;
 }
 
+// titres de nos card -- h4 réservé aux titres des pages
+h5 {
+  font-family: "Lato-Bold", sans-serif;
+}
+
 .flex-between {
   @extend %flex-between;
 }
