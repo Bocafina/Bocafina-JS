@@ -1,4 +1,5 @@
 @import "../../../../assets/styles/placeholders.scss";
+@import "../../../../assets/styles/variables.scss";
 
 .navbar-mobile .nav-link {
   padding: 0;
@@ -9,13 +10,16 @@
   height: 2.7rem;
   flex-direction: column;
 
-p {
-  color: white;
-  font-size: 0.7rem;
-}
+  p {
+    color: white;
+    font-size: 0.7rem;
+  }
 
-img {
-  max-height: 4rem;
-}
-
+  img {
+    max-height: 4rem;
+  }
+  .isActive {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%) hue-rotate(60deg) brightness(100%)
+      contrast(92%);
+  }
 }
