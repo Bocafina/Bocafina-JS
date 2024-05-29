@@ -1,3 +1,4 @@
+import DateNavigator from "../../components/common/DateNavigator/DateNavigator";
 import ListWrapper from "../../components/mobile/ListWrapper/ListWrapper";
 
 import "./menusScreen.scss";
@@ -5,10 +6,8 @@ import "./menusScreen.scss";
 export default function MenusScreen() {
 	return (
 		<>
-			<h4 className="text-secondary ms-2 mt-2">
-				Planificateur de repas
-			</h4>
-
+			<h4 className="text-secondary ms-2 mt-2">Planificateur de repas</h4>
+			<DateNavigator />
 			<ListWrapper />
 		</>
 	);
