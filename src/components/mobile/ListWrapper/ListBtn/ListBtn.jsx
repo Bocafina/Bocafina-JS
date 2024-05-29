@@ -5,10 +5,10 @@ import ListGroup from "react-bootstrap/ListGroup";
 import "./listBtn.scss";
 
 const ListBtn = (props) => {
-	return (
+  return (
 		<>
-			<ListGroup.Item className="text-secondary listBtnStyle">
-				<div className="flex-between">
+			<ListGroup.Item as="button" className=" text-secondary listBtnStyle">
+				<div className="flex-between font-bold">
 					<span>{props.dayName}</span>
 					<Image
 						className=""
@@ -22,3 +22,7 @@ const ListBtn = (props) => {
 };
 
 export default ListBtn;
+
+// as="button". 
+// applique les styles et comportements du bouton tout en conservant
+// l'apparence et la fonctionnalité du ListGroup.Item.

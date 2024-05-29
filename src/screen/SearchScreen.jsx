@@ -2,7 +2,21 @@ import RecipesCardDisplay from "../components/common/RecipesCardDisplay/RecipesC
 import RecipesFiltersBar from "../components/common/RecipesFiltersBar/RecipesFiltersBar";
 import SearchBar from "../components/common/SearchBar/SearchBar";
 
+import { searchScreenRecipeData } from "../data/searchScreenRecipeData";
+
 export default function SearchScreen() {
+  let searchScreenRecipes = searchScreenRecipeData;
+
+  const recipesList = searchScreenRecipes.map((recipes) => (
+      <RecipesCardDisplay
+        key={recipes.id}
+        hasHeader={false}
+        imageSrc={recipes.imageSrc}
+        profilName={recipes.profilName}
+        recipeTitle={recipes.recipeTitle}
+      />
+  ));
+
   return (
     <>
       <div className="container-fluid">
@@ -10,59 +24,10 @@ export default function SearchScreen() {
 
         <RecipesFiltersBar />
 
-        <section>
-          <div className="row">
-            <div className="col-6">
-              <RecipesCardDisplay
-                hasHeader={false}
-                imageSrc="./src/assets/img/imgTest.png"
-                profilName="Nom de profil"
-                recipeTitle="Titre de la recette"
-              />
-            </div>
-            <div className="col-6">
-              <RecipesCardDisplay
-                hasHeader={false}
-                imageSrc="./src/assets/img/imgTest.png"
-                profilName="Nom de profil"
-                recipeTitle="Titre de la recette"
-              />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <RecipesCardDisplay
-                hasHeader={false}
-                imageSrc="./src/assets/img/imgTest.png"
-                profilName="Nom de profil"
-                recipeTitle="Titre de la recette"
-              />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-6">
-              <RecipesCardDisplay
-                hasHeader={false}
-                imageSrc="./src/assets/img/imgTest.png"
-                profilName="Nom de profil"
-                recipeTitle="Titre de la recette"
-              />
-            </div>
-            <div className="col-6">
-              <RecipesCardDisplay
-                hasHeader={false}
-                imageSrc="./src/assets/img/imgTest.png"
-                profilName="Nom de profil"
-                recipeTitle="Titre de la recette"
-              />
-            </div>
-          </div>
-        </section>
-
-        
-
-      
+        <section>{recipesList}</section>
       </div>
     </>
   );
 }
+
+// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici 
