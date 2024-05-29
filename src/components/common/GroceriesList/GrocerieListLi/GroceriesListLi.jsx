@@ -18,7 +18,7 @@ const GroceriesListLi = (props) => {
 
   const listGoupItem = Object.keys(groupedIngredients).map((type) => (
     <ListGroup variant="flush" key={type}>
-      <p className="text-secondary">{type}</p>
+      <p className="text-secondary font-bold">{type}</p>
       {groupedIngredients[type].map((ingredient) => (
         <ListGroupItem key={ingredient.id} className=" bg-primary text-secondary">
           <div className="d-flex justify-content-between">
