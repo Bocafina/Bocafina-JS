@@ -16,7 +16,7 @@ const NavbarMobileIcon = (props) => {
         <Link className="nav-link" to={props.to}>
           <div className="icon-wrapper flex-between">
             <img className={isActive  ? "isActive" : ""} src={`src/assets/svg/${props.icon}`} alt={`image ${props.icon}`} />
-            <p className="text-secondary">{props.name}</p>
+            <p className={isActive  ? "text-tertiary" : "text-secondary"}>{props.name}</p>
           </div>
         </Link>
       </NavItem>
