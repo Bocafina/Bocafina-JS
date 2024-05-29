@@ -7,10 +7,25 @@
 
 // CSS global et media queries 
 
+@font-face {
+font-family: "Gayathri";
+font-weight: 400;
+src:url("../../../public/font/gayathri-bold-webfont.woff2") format("woff2"),
+    url("../../../public/font/gayathri-bold-webfont.woff") format("woff");
+
+}
+
 body {
   background-color: #000 !important;
+  font-family: "Gayathri", sans-serif;
 }
 
 .flex-between {
   @extend %flex-between;
 }
+
+
+
+
+
+
