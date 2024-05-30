@@ -24,7 +24,7 @@ function App() {
 
           <Route path="/recipes/:recipe" element={<RecipesScreen />} />
 
-          <Route path="/login" element={<ProfileScreen />} />
+          <Route path="/login" element={<LoginScreen />} />
           <Route path="/create-profile" element={<ProfileScreen />} />
           <Route path="/my-profile" element={<ProfileScreen />} />
           <Route path="/profiles/:profile" element={<ProfileScreen />} />
