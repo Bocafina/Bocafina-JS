@@ -28,7 +28,7 @@ export default function HomeScreen() {
   return (
     <>
       <div className="container-fluid">
-        <div className="w-100 flex-between">
+        <div className="flex-between">
           <div>
             <Logo />
           </div>
