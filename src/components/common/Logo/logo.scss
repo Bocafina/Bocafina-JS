@@ -7,7 +7,7 @@
 	width: 54vw;
 	min-height: 80px;
 }
-// mixins example ($top, $right, $bottom, $left, $x, $y)
+// mixins example ($top, $right, $bottom, $left)
 .sizeWelcome {
 	font-size: 4vw;
 }
@@ -19,11 +19,11 @@
 .sizeHelloCat {
 	img {
 		height: 17vw;
-		@include absolute-el(null, -10%, -10%, null, null, null);
+		@include absolute-el(null, -10%, -10%, null);
 	}
 }
 
-// media queries
+// media queries logo
 @media (min-width: 260px) and (max-width: 360px) {
 	.wrapper {
 		min-height: 60px;
