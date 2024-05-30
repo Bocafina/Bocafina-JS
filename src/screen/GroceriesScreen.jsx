@@ -5,9 +5,9 @@ export default function GroceriesScreen() {
   return (
 		<>
 			<div className="container-fluid">
-				<h4 className="text-secondary mt-3">Liste de courses</h4>
+				<h4 className="text-secondary mt-3 mb-4">Liste de courses</h4>
 				<GroceriesList />
-				<BtnBlackGreen className="" btnName="ajouter un ingredient" />
+				<BtnBlackGreen btnName="ajouter un ingrédient" />
 			</div>
 		</>
 	);

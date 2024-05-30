@@ -10,6 +10,7 @@ import PageNotFound from "./screen/PageNotFound";
 
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 import ProfileScreen from "./screen/ProfileScreen";
+import LoginScreen from "./screen/LoginScreen/LoginScreen";
 
 function App() {
   return (
