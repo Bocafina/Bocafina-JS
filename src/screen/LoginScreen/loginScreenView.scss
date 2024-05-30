@@ -1,0 +1,52 @@
+@import "/src/assets/styles/variables";
+
+.posSettings {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	img {
+		width: 8vw;
+	}
+}
+
+.full-width-line {
+	// permet d'override le container-fluid dans LoginScreen.jsx
+	display: block;
+	width: 100vw;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	left: 50%;
+	position: relative;
+}
+// permet d'override le a de bootstrap (idk why, on a un reset pourtant)
+a {
+	text-decoration: none !important;
+}
+
+.sizeForgottenPassword {
+	font-size: 0.75rem;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+}
+
+// taille des boutons
+.btn-connexion {
+.btn-BG .btn.btn-primary {
+  font-size: 1rem !important;
+  padding: 5px 30px;
+  
+}
+}
+
+.checkboxBorderColor {
+.form-check-input {
+--bs-border-color: #{$secondary} !important;
+}
+}
+
+.opacity-line {
+opacity: 1;
+}
