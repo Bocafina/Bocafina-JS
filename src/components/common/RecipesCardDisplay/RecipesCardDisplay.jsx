@@ -1,4 +1,5 @@
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import ThreeDotBtn from "./ThreeDotBtn/TreeDotBtn";
 import ProfilePic from "../ProfilePic/ProfilePic";
@@ -11,11 +12,11 @@ const RecipesCardDisplay = (props) => {
 
   if (hasHeader) {
     header = (
-      <> 
+      <>
         <Card.Header className="bg-primary">
           <div className="recipes-card-section flex-between">
             <div className="d-flex align-items-center">
-              <ProfilePic  profilePicSrc="profilepiccat.png" />
+              <ProfilePic profilePicSrc="profilepiccat.png" />
               <h5 className="text-secondary">{props.profilName}</h5>
             </div>
 
@@ -36,20 +37,21 @@ const RecipesCardDisplay = (props) => {
 
   return (
     <>
-    <div className={props.className}>
-      <Card className={props.shadow}>
-        {header}
-        <Card.Footer className="bg-primary">
-          <div className="recipes-card-section flex-between">
-            <h5 className="text-secondary">{props.recipeTitle}</h5>
-            <button>
-              <img src="./src/assets/svg/addCookBookIcon.svg" alt="addCookBook" />
-            </button>
-          </div>
-        </Card.Footer>
-      </Card>
-    </div>
-      
+      <div className={props.className}>
+        <Link to={"/recipes/" + props.to}>
+          <Card className={props.shadow}>
+            {header}
+            <Card.Footer className="bg-primary">
+              <div className="recipes-card-section flex-between">
+                <h5 className="text-secondary">{props.recipeTitle}</h5>
+                <button>
+                  <img src="./src/assets/svg/addCookBookIcon.svg" alt="addCookBook" />
+                </button>
+              </div>
+            </Card.Footer>
+          </Card>
+        </Link>
+      </div>
     </>
   );
 };
