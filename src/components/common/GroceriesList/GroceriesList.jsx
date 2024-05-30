@@ -14,7 +14,7 @@ const GroceriesList = () => {
 
   return (
     <>
-      <Form className="bg-groceries-list rounded-3 pb-3 my-3">
+      <Form className="bg-groceries-list rounded-3 pb-3 m-2">
         <GroceriesListLi ingredientsList={ingredientsList} />
       </Form>
     </>

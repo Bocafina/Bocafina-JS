@@ -37,19 +37,21 @@ const RecipesCardDisplay = (props) => {
 
   return (
     <>
-      <Link to={"/recipes/"+props.to}>
-        <Card>
-          {header}
-          <Card.Footer className="bg-primary">
-            <div className="recipes-card-section flex-between">
-              <h5 className="text-secondary">{props.recipeTitle}</h5>
-              <button>
-                <img src="./src/assets/svg/addCookBookIcon.svg" alt="addCookBook" />
-              </button>
-            </div>
-          </Card.Footer>
-        </Card>
-      </Link>
+      <div className={props.className}>
+        <Link to={"/recipes/" + props.to}>
+          <Card className={props.shadow}>
+            {header}
+            <Card.Footer className="bg-primary">
+              <div className="recipes-card-section flex-between">
+                <h5 className="text-secondary">{props.recipeTitle}</h5>
+                <button>
+                  <img src="./src/assets/svg/addCookBookIcon.svg" alt="addCookBook" />
+                </button>
+              </div>
+            </Card.Footer>
+          </Card>
+        </Link>
+      </div>
     </>
   );
 };
