@@ -9,6 +9,7 @@ import RecipesScreen from "./screen/RecipesScreen";
 import PageNotFound from "./screen/PageNotFound";
 
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
+import ProfileScreen from "./screen/ProfileScreen";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
           <Route path="/groceries" element={<GroceriesScreen />} />
 
           <Route path="/recipes/:recipe" element={<RecipesScreen />} />
+
+          <Route path="/login" element={<ProfileScreen />} />
+          <Route path="/create-profile" element={<ProfileScreen />} />
+          <Route path="/my-profile" element={<ProfileScreen />} />
+          <Route path="/profiles/:profile" element={<ProfileScreen />} />
 
           <Route pathe="/page_not_found" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
