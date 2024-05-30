@@ -35,7 +35,6 @@ const GroceriesListLi = (props) => {
 
   return (
     <>
-      <h5 className="text-secondary p-1 m-1">{ingredientsList.namelist}</h5>
       {listGoupItem}
     </>
   );
