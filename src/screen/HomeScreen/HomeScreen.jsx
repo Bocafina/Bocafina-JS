@@ -1,4 +1,5 @@
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
 import Logo from "../../components/common/Logo/Logo";
@@ -35,7 +36,9 @@ export default function HomeScreen() {
             <Image className="mt-1 ms-2" src="../../src/assets/svg/notification-icon.svg" alt="Notification icon" />
           </div>
           <div className="posProfilePic">
+            <Link to="/login">
             <ProfilePic profilePicSrc="profilepiccat.png" />
+            </Link>
           </div>
         </div>
 
