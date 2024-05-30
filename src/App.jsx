@@ -12,21 +12,21 @@ import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 
 function App() {
   return (
-    <>
-      <div>
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/search" element={<SearchScreen />} />
-          <Route path="/cookbook" element={<CookBookScreen />} />
-          <Route path="/menus" element={<MenusScreen />} />
-          <Route path="/groceries" element={<GroceriesScreen />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </div>
+		<>
+			<div className="main-content">
+				<Routes>
+					<Route path="/" element={<HomeScreen />} />
+					<Route path="/search" element={<SearchScreen />} />
+					<Route path="/cookbook" element={<CookBookScreen />} />
+					<Route path="/menus" element={<MenusScreen />} />
+					<Route path="/groceries" element={<GroceriesScreen />} />
+					<Route path="*" element={<PageNotFound />} />
+				</Routes>
+			</div>
 
-      <NavbarMobile />
-    </>
-  );
+			<NavbarMobile />
+		</>
+	);
 }
 
 export default App;
