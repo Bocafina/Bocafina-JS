@@ -14,7 +14,7 @@ const NavbarMobileIcon = (props) => {
 					<div className="icon-wrapper flex-between">
 						<img
 							className={isActive ? "isActive" : ""}
-							src={`src/assets/svg/${props.icon}`}
+							src={`./src/assets/svg/${props.icon}`}
 							alt={`image ${props.icon}`}
 						/>
 						<p
