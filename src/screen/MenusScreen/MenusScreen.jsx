@@ -6,9 +6,11 @@ import "./menusScreen.scss";
 export default function MenusScreen() {
 	return (
 		<>
-			<h4 className="text-secondary ms-3 mt-3">Planificateur de repas</h4>
-			<DateNavigator />
-			<ListWrapper />
+			<div className="container-fluid">
+				<h4 className="text-secondary mt-3">Planificateur de repas</h4>
+				<DateNavigator />
+				<ListWrapper />
+			</div>
 		</>
 	);
 }
