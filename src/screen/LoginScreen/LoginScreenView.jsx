@@ -46,7 +46,15 @@ const LoginScreenView = (props) => {
 					placeholder="(exemple: votrenom@domaine.com)"
 				/>
 				<br />
-				<div className="input-group d-flex justify-content-between">
+				<div className="input-group position-relative d-flex justify-content-between w-100">
+					{/* image du chat qui grimpe */}
+					<div className="posCatClaws">
+						<Image
+							className=""
+							src="../../src/assets/img/scratch-gray.png"
+							alt="Image de chat qui grimpe"
+						/>
+					</div>
 					<label className="mb-1 ms-3" htmlFor="password">
 						mot de passe
 					</label>
@@ -75,19 +83,20 @@ const LoginScreenView = (props) => {
 					className="form-check-input mt-0"
 					type="checkbox"
 					value=""
-					aria-label="Checkbox for following text input"
+					aria-label="Case à cocher pour rester connecté(e)"
 				></input>
-				<label className="ms-2 text-secondary">Rester connecté</label>
+				<label className="ms-2 text-secondary">Rester connecté(e)</label>
 			</div>
 
 			{/* ligne de séparation */}
 			<hr className="text-secondary my-4 mx-5 opacity-line" />
 
 			{/* nouveau profil texte + bouton */}
-			<div className="d-flex flex-column justify-content-center align-items-center text-center">
+			<div className="posNewProfile d-flex flex-column justify-content-center align-items-center text-center">
 				<span className="text-secondary mx-4">Nouveau sur Bocafina ?</span>
 				<span className="text-secondary mx-4">
-					Rejoignez-nous pour débloquer la création et le partage de recettes à votre image.
+					Rejoignez-nous pour débloquer la création et le partage de recettes à
+					votre image.
 				</span>
 			</div>
 			<div className="btn-connexion mt-2">
