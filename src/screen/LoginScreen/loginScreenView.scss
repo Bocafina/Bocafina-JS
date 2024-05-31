@@ -52,14 +52,24 @@ a {
 }
 
 // image du chat
+// ($top, $right, $bottom, $left)
 .posCatClaws {
 	img {
 		height: 35vw;
 		@include absolute-el(35px, 15px, null, null);
 		transform: rotate(-14deg);
+		z-index: 9999;
 	}
 }
-// ($top, $right, $bottom, $left)
+
+
+// styles des input borders
+.inputStyle {
+	border: 1px solid transparent;
+}
+.form-control:focus {
+	border: 1px solid $tertiary !important;
+}
 
 
 // media queries taille du chat

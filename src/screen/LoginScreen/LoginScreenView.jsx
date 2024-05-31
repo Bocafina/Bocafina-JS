@@ -34,16 +34,17 @@ const LoginScreenView = (props) => {
 			<hr className="text-secondary opacity-line full-width-line" />
 
 			{/* formulaire de connexion */}
-			<form className="input-group text-secondary">
+			<form className="input-group text-secondary" novalidate>
 				<label className="mb-1 ms-3" htmlFor="email">
 					email
 				</label>
 				<br />
 				<input
-					className="w-100 mb-3 mx-3 p-1 rounded-3 bg-transparent"
+					className="w-100 mb-3 mx-3 p-2 rounded-3 bg-transparent inputStyle form-control"
 					name="email"
 					id="email"
 					placeholder="(exemple: votrenom@domaine.com)"
+					required
 				/>
 				<br />
 				<div className="input-group position-relative d-flex justify-content-between w-100">
@@ -66,11 +67,12 @@ const LoginScreenView = (props) => {
 					</Link>
 				</div>
 				<input
-					className="w-100 mb-3 mx-3 p-1 rounded-3 bg-transparent"
+					className="w-100 mb-3 mx-3 p-2 rounded-3 bg-transparent inputStyle form-control"
 					type="password"
 					name="password"
 					id="password"
 					placeholder="Votre mot de passe"
+					required
 				/>
 			</form>
 
