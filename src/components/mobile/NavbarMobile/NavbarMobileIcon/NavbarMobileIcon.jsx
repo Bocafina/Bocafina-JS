@@ -10,19 +10,18 @@ import groceriesIcon from "../../../../assets/svg/homeIcon.svg";
 import "./navbarMobileIcon.scss";
 
 const NavbarMobileIcon = (props) => {
-
-const iconMapping = {
-	home: homeIcon,
-	search: searchIcon,
-	cookbook: cookbookIcon,
-	menus: menusIcon,
-	groceries: groceriesIcon, 
-}  
+  const iconMapping = {
+    home: homeIcon,
+    search: searchIcon,
+    cookbook: cookbookIcon,
+    menus: menusIcon,
+    groceries: groceriesIcon,
+  };
 
   const resolvedPath = useResolvedPath(props.to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
-  const Icon = iconMapping[props.icon]
+  const Icon = iconMapping[props.icon];
 
   return (
     <>
