@@ -29,40 +29,48 @@ const LoginScreenView = () => {
       {/* ligne de séparation */}
       <hr className="text-secondary opacity-line full-width-line" />
 
-      {/* formulaire de connexion */}
-      <form className="input-group text-secondary">
-        <label className="mb-1 ms-3" htmlFor="email">
-          email
-        </label>
-        <br />
-        <input
-          className="w-100 mb-3 mx-3 p-1 rounded-3 bg-transparent"
-          name="email"
-          id="email"
-          placeholder="(exemple: votrenom@domaine.com)"
-        />
-        <br />
-        <div className="input-group position-relative d-flex justify-content-between w-100">
-          {/* image du chat qui grimpe */}
+			{/* formulaire de connexion */}
+			<form className="input-group text-secondary" novalidate>
+				<label className="mb-1 ms-3" htmlFor="email">
+					email
+				</label>
+				<br />
+				<input
+					className="w-100 mb-3 mx-3 p-2 rounded-3 bg-transparent inputStyle form-control"
+					name="email"
+					id="email"
+					placeholder="(exemple: votrenom@domaine.com)"
+					required
+				/>
+				<br />
+				<div className="input-group position-relative d-flex justify-content-between w-100">
+					{/* image du chat qui grimpe */}
 
-          <label className="mb-1 ms-3" htmlFor="password">
-            mot de passe
-          </label>
-          <div className="posCatClaws">
-            <Image className="" src="../../src/assets/img/scratch-gray.png" alt="Image de chat qui grimpe" />
-          </div>
-          <Link to="">
-            <span className="me-3 sizeForgottenPassword text-secondary">mot de passe oublié ?</span>
-          </Link>
-        </div>
-        <input
-          className="w-100 mb-3 mx-3 p-1 rounded-3 bg-transparent"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Votre mot de passe"
-        />
-      </form>
+					<label className="mb-1 ms-3" htmlFor="password">
+						mot de passe
+					</label>
+					<div className="posCatClaws">
+						<Image
+							className=""
+							src="../../src/assets/img/scratch-gray.png"
+							alt="Image de chat qui grimpe"
+						/>
+					</div>
+					<Link to="">
+						<span className="me-3 sizeForgottenPassword text-secondary">
+							mot de passe oublié ?
+						</span>
+					</Link>
+				</div>
+				<input
+					className="w-100 mb-3 mx-3 p-2 rounded-3 bg-transparent inputStyle form-control"
+					type="password"
+					name="password"
+					id="password"
+					placeholder="Votre mot de passe"
+					required
+				/>
+			</form>
 
       {/* bouton de connection + rester ou non connecté */}
       <div className="btn-connexion mt-5">
