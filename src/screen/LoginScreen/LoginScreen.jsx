@@ -1,7 +1,5 @@
 import LoginScreenView from "./LoginScreenView";
 
-import "./loginScreen.scss";
-
 const LoginScreen = () => {
 	return (
 		<>

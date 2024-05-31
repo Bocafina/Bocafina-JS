@@ -1,0 +1,9 @@
+@import "/src/assets/styles/variables";
+@import "/src/assets/styles/mixins";
+
+.btn-createAccount {
+  .btn-BG .btn.btn-primary {
+    font-size: 1rem !important;
+    padding: 5px 30px;
+  }
+}
