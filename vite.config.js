@@ -6,4 +6,7 @@ export default defineConfig({
   base: "/bocafina-react-js/",
   sourcemap: true,
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+  },
 })
