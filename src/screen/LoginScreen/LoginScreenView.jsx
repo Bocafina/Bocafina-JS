@@ -29,6 +29,7 @@ const LoginScreenView = () => {
         </div>
       </div>
 
+
       {/* ligne de séparation */}
       <hr className="text-secondary opacity-line full-width-line" />
 
@@ -48,6 +49,7 @@ const LoginScreenView = () => {
         <br />
         <div className="input-group position-relative d-flex justify-content-between w-100">
           {/* image du chat qui grimpe */}
+
 
           <label className="mb-1 ms-3" htmlFor="password">
             mot de passe

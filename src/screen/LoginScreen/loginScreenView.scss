@@ -61,17 +61,6 @@ a {
 		z-index: 9999;
 	}
 }
-
-
-// styles des input borders
-.inputStyle {
-	border: 1px solid transparent;
-}
-.form-control:focus {
-	border: 1px solid $tertiary !important;
-}
-
-
 // media queries taille du chat
 @media (min-width: 600px) and (max-width: 769px) {
 	.posCatClaws {
@@ -79,8 +68,26 @@ a {
 			height: 35vw;
 		}
 	}
-.posNewProfile {
-	margin-top: 60px;
-}
+	.posNewProfile {
+		margin-top: 60px;
+	}
 }
 
+// styles des input borders
+.inputStyle {
+	border: 1px solid transparent;
+	color: $secondary !important;
+
+	&:focus {
+		border: 1px solid $tertiary !important;
+	}
+	// pb à résoudre : chrome mettant un bg-c white)
+	// input:-webkit-autofill,
+	// input:-webkit-autofill:focus,
+	// input:-webkit-autofill:active {
+	// }
+
+
+
+	// }
+}
