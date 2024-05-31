@@ -23,12 +23,16 @@ function App() {
           <Route path="/menus" element={<MenusScreen />} />
           <Route path="/groceries" element={<GroceriesScreen />} />
 
-          <Route path="/recipes/:recipe" element={<RecipesScreen />} />
+          <Route path="/recipes">
+            <Route path=":recipe" element={<RecipesScreen />} />
+          </Route>
 
-          <Route path="/login" element={<LoginScreen />} />
-          <Route path="/create-profile" element={<ProfileScreen />} />
-          <Route path="/my-profile" element={<ProfileScreen />} />
-          <Route path="/profiles/:profile" element={<ProfileScreen />} />
+          <Route path="/profiles">
+            <Route path="login" element={<LoginScreen />} />
+            <Route path="account-register" element={<ProfileScreen />} />
+            <Route path="my-profile" element={<ProfileScreen />} />
+            <Route path=":profile" element={<ProfileScreen />} />
+          </Route>
 
           <Route pathe="/page_not_found" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
