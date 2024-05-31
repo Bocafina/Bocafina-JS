@@ -36,7 +36,7 @@ export default function HomeScreen() {
             <Image className="mt-1 ms-2" src="../../src/assets/svg/notification-icon.svg" alt="Notification icon" />
           </div>
           <div className="posProfilePic">
-            <Link to="/login">
+            <Link to="/profiles/login">
             <ProfilePic profilePicSrc="profilepiccat.png" />
             </Link>
           </div>
