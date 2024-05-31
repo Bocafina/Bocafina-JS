@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* app pris en compte ds application ds react router */}
-    <BrowserRouter>
+    <BrowserRouter basename={"/bocafina-react-js/"}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
