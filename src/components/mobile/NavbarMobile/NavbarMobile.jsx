@@ -8,24 +8,24 @@ const NavbarMobile = () => {
 		<>
 			<div className="navbar-mobile container-fluid">
 				<Nav className="justify-content-around align-items-baseline">
-					<NavbarMobileIcon icon="homeIcon.svg" name="Acceuil" to="/" />
+					<NavbarMobileIcon icon="home" name="Acceuil" to="/" />
 					<NavbarMobileIcon
-						icon="searchIcon.svg"
+						icon="search"
 						name="Recherche"
 						to="/search"
 					/>
 					<NavbarMobileIcon
-						icon="cookbookIcon.svg"
+						icon="cookbook"
 						name="CookBook"
 						to="/cookbook"
 					/>
 					<NavbarMobileIcon
-						icon="menusIcon.svg"
+						icon="menus"
 						name="Planificateur"
 						to="/menus"
 					/>
 					<NavbarMobileIcon
-						icon="groceriesIcon.svg"
+						icon="groceries"
 						name="Courses"
 						to="/groceries"
 					/>
