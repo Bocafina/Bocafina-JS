@@ -13,20 +13,20 @@ const LoginScreenView = (props) => {
 			<div className="flex-between mb-4">
 				<div className="flex-between ms-2 mt-3">
 					<div>
-						<Link to="">
-							<ProfilePic profilePicSrc="profilepiccat.png" />
-						</Link>
+						<ProfilePic profilePicSrc="profilepiccat.png" />
 					</div>
 					<div>
 						<h4 className="text-secondary">CatUserUUID</h4>
 					</div>
 				</div>
 				<div className="posSettings">
-					<Image
-						className=""
-						src="../../src/assets/svg/settings.svg"
-						alt="Icone des paramètres"
-					/>
+					<Link to="">
+						<Image
+							className=""
+							src="../../src/assets/svg/settings.svg"
+							alt="Icone des paramètres"
+						/>
+					</Link>
 				</div>
 			</div>
 
@@ -34,7 +34,7 @@ const LoginScreenView = (props) => {
 			<hr className="text-secondary opacity-line full-width-line" />
 
 			{/* formulaire de connexion */}
-			<form className="input-group text-secondary" novalidate>
+			<form className="input-group text-secondary" noValidate>
 				<label className="mb-1 ms-3" htmlFor="email">
 					email
 				</label>
