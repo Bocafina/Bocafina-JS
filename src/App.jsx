@@ -10,6 +10,7 @@ import PageNotFound from "./screen/PageNotFound";
 
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
 import ProfileScreen from "./screen/ProfileScreen";
+import LoginScreen from "./screen/LoginScreen/LoginScreen";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           </Route>
 
           <Route path="/profiles">
-            <Route path="login" element={<ProfileScreen />} />
+            <Route path="login" element={<LoginScreen />} />
             <Route path="account-register" element={<ProfileScreen />} />
             <Route path="my-profile" element={<ProfileScreen />} />
             <Route path=":profile" element={<ProfileScreen />} />
