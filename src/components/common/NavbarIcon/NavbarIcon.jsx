@@ -1,15 +1,15 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { NavItem } from "react-bootstrap";
 
-import homeIcon from "../../../../assets/svg/homeIcon.svg";
-import searchIcon from "../../../../assets/svg/searchIcon.svg";
-import cookbookIcon from "../../../../assets/svg/cookbookIcon.svg";
-import menusIcon from "../../../../assets/svg/menusIcon.svg";
-import groceriesIcon from "../../../../assets/svg/homeIcon.svg";
+import homeIcon from "../../../assets/svg/homeIcon.svg";
+import searchIcon from "../../../assets/svg/searchIcon.svg";
+import cookbookIcon from "../../../assets/svg/cookbookIcon.svg";
+import menusIcon from "../../../assets/svg/menusIcon.svg";
+import groceriesIcon from "../../../assets/svg/homeIcon.svg";
 
-import "./navbarMobileIcon.scss";
+import "./navbarIcon.scss";
 
-const NavbarMobileIcon = (props) => {
+const NavbarIcon = (props) => {
   const iconMapping = {
     home: homeIcon,
     search: searchIcon,
@@ -37,4 +37,4 @@ const NavbarMobileIcon = (props) => {
   );
 };
 
-export default NavbarMobileIcon;
+export default NavbarIcon;
