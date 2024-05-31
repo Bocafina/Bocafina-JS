@@ -6,8 +6,7 @@
 	color: $c-lightgrey;
 	width: 54vw;
 	min-height: 80px;
-}
-// mixins example ($top, $right, $bottom, $left)
+
 .sizeWelcome {
 	font-size: 4vw;
 }
@@ -19,9 +18,12 @@
 .sizeHelloCat {
 	img {
 		height: 17vw;
-		@include absolute-el(null, -10%, -10%, null);
+		
 	}
+	// mixins example ($top, $right, $bottom, $left)
 }
+}
+
 
 // media queries logo
 @media (min-width: 260px) and (max-width: 360px) {
@@ -30,5 +32,25 @@
 	}
 	.sizeLogo {
 		margin-bottom: 1px;
+	}
+}
+@media (min-width: 769px){
+	.wrapper {
+		width: 22vw;
+	.sizeWelcome {
+		font-size: 1.7vw;
+		width: 100%;
+	}
+	.sizeLogo {
+		img {
+			width: 16vw;
+		}
+	}
+	.sizeHelloCat {
+		img {
+			height: 8vw;
+		@include absolute-el(30%, -23%, null, null);
+	}
+	}
 	}
 }

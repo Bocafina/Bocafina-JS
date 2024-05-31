@@ -1,5 +1,15 @@
+@import "../../assets/styles/variables";
+
 .sizeNotif {
 	img {
 		width: 5vw;
 	}
+}
+@media (min-width: 769px){
+.greyBlock {
+	width: 25vw;
+	min-height: 100vh;
+	background-color: $bgc-darkgrey;
+}
+
 }
