@@ -48,6 +48,10 @@ const LoginScreenView = (props) => {
 				<br />
 				<div className="input-group position-relative d-flex justify-content-between w-100">
 					{/* image du chat qui grimpe */}
+
+					<label className="mb-1 ms-3" htmlFor="password">
+						mot de passe
+					</label>
 					<div className="posCatClaws">
 						<Image
 							className=""
@@ -55,9 +59,6 @@ const LoginScreenView = (props) => {
 							alt="Image de chat qui grimpe"
 						/>
 					</div>
-					<label className="mb-1 ms-3" htmlFor="password">
-						mot de passe
-					</label>
 					<Link to="">
 						<span className="me-3 sizeForgottenPassword text-secondary">
 							mot de passe oublié ?
