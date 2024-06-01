@@ -2,30 +2,29 @@
 @import "../../../assets/styles/_variables.scss";
 
 .wrapper {
-	background-color: $bgc-darkgrey;
-	color: $c-lightgrey;
+	background-color: $primary;
+	color: $secondary;
 	width: 54vw;
 	min-height: 80px;
 
-.sizeWelcome {
-	font-size: 4vw;
-}
-.sizeLogo {
-	img {
-		width: 34vw;
+	.sizeWelcome {
+		font-size: 4vw;
+	}
+	.sizeLogo {
+		img {
+			width: 34vw;
+		}
+	}
+	.sizeHelloCat {
+		img {
+			height: 17vw;
+		}
+		// mixins example ($top, $right, $bottom, $left)
 	}
 }
-.sizeHelloCat {
-	img {
-		height: 17vw;
-		
-	}
-	// mixins example ($top, $right, $bottom, $left)
-}
-}
-
 
 // media queries logo
+//phone
 @media (min-width: 260px) and (max-width: 360px) {
 	.wrapper {
 		min-height: 60px;
@@ -34,23 +33,68 @@
 		margin-bottom: 1px;
 	}
 }
-@media (min-width: 769px){
+//desktop
+@media (min-width: 769px) and (max-width: 1200px) {
 	.wrapper {
 		width: 22vw;
-	.sizeWelcome {
-		font-size: 1.7vw;
-		width: 100%;
-	}
-	.sizeLogo {
-		img {
-			width: 16vw;
+		max-width: 350px;
+		.sizeWelcome {
+			font-size: 1.6vw;
+		}
+		.sizeLogo {
+			img {
+				width: 16vw;
+				max-width: 250px;
+			}
+		}
+		.sizeHelloCat {
+			img {
+				height: 8vw;
+				max-height: 110px;
+				@include absolute-el(30%, -25%, null, null);
+			}
 		}
 	}
-	.sizeHelloCat {
-		img {
-			height: 8vw;
-		@include absolute-el(30%, -23%, null, null);
+}
+//large desktop
+@media (min-width: 1201px) {
+	.wrapper {
+		width: 22vw;
+		max-width: 300px;
+		.sizeWelcome {
+			font-size: 19px;
+		}
+		.sizeLogo {
+			img {
+				width: 16vw;
+				max-width: 250px;
+			}
+		}
+		.sizeHelloCat {
+			img {
+				height: 8vw;
+				max-height: 110px;
+				@include absolute-el(30%, -25%, null, null);
+			}
+		}
 	}
-	}
+}
+//extra large desktop
+@media (min-width: 1401px) {
+	.wrapper {
+		max-width: 300px;
+		.sizeLogo {
+			img {
+				width: 16vw;
+				max-width: 220px;
+			}
+		}
+		.sizeHelloCat {
+			img {
+				height: 8vw;
+				max-height: 110px;
+				@include absolute-el(30%, -25%, null, null);
+			}
+		}
 	}
 }

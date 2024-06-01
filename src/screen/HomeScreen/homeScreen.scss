@@ -9,7 +9,12 @@
 .greyBlock {
 	width: 25vw;
 	min-height: 100vh;
-	background-color: $bgc-darkgrey;
+	background-color: $primary;
 }
 
+}
+@media (min-width: 1201px){
+.greyBlock {
+	max-width: 350px;;
+}
 }

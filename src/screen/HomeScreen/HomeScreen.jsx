@@ -57,11 +57,11 @@ export default function HomeScreen() {
 						</div>
 
 						<div className="d-flex justify-content-center">
-							<div className="posProfilePic">
+							<div className="posProfilePic d-flex flex-column align-items-center">
 								<Link to="/profiles/login">
 									<ProfilePic profilePicSrc="profilepiccat.png" />
 								</Link>
-								<p className="text-secondary mt-2">CatUserUUID</p>
+								<p className="text-secondary mt-2 font-bold">CatUserUUID</p>
 							</div>
 						</div>
 
@@ -76,10 +76,8 @@ export default function HomeScreen() {
 						{/* ligne de séparation */}
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
 
-            {/* navbar-left */}
-            <div className="">
-              
-            </div>
+						{/* navbar-left */}
+						<div className=""></div>
 
 						{/* ligne de séparation */}
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
