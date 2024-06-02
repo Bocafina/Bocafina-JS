@@ -9,19 +9,21 @@ import "./homeScreen.scss";
 import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
 import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
 import NavbarDesktop from "../../components/desktop/NavbarDesktop/NavbarDesktop";
+import SearchBarDesktop from "../../components/desktop/SearchBarDesktop/SearchBarDesktop";
 
 export default function HomeScreen(props) {
 	let homeScreenRecipes = homeScreenRecipesData;
 
 	const RecipesList = homeScreenRecipes.map((recipes) => (
-		<RecipesCardDisplay
-			to={recipes.recipeTitle}
-			key={recipes.id}
-			isHomeScreen={true}
-			imageSrc={recipes.imageSrc}
-			profilName={recipes.profilName}
-			recipeTitle={recipes.recipeTitle}
-		/>
+		<Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} key={recipes.id}>
+			<RecipesCardDisplay
+				to={recipes.recipeTitle}
+				isHomeScreen={true}
+				imageSrc={recipes.imageSrc}
+				profilName={recipes.profilName}
+				recipeTitle={recipes.recipeTitle}
+			/>
+		</Col>
 	));
 
 	return (
@@ -52,7 +54,7 @@ export default function HomeScreen(props) {
 			<Container fluid className="d-none d-md-block desktopSize">
 				<Row className="g-0">
 					{/* Colonne navbar */}
-					<Col md={4} className="greyBlock rounded-3">
+					<Col md={3} className="greyBlock rounded-3">
 						<div>
 							<Logo />
 						</div>
@@ -82,21 +84,72 @@ export default function HomeScreen(props) {
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
 					</Col>
 					{/* FIN colonne navbar */}
-					
+
 					{/* Colonne contenu principal */}
-					<Col md={8} className="">
-						<Row className="g-0">
+					<Col md={9} className="">
+						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 position-relative marginRightDiv">
 							<Col md={6}>
-								<div className="text-secondary ms-5">ou suis je ?</div>
+								<div className="text-secondary p-2">
+									<SearchBarDesktop />
+								</div>
 							</Col>
-							<Col md={3} className="text-secondary">
-								rien
+							<Col
+								md={5}
+								className="text-secondary d-flex align-items-center justify-content-end posBtn"
+							>
+								<div className="btn-connexion">
+									<Link to="">
+										<BtnBlackGreen btnName="ajouter une recette" />
+									</Link>
+								</div>
 							</Col>
-							<Col md={3} className="text-secondary">
-								bouton
+							<Col md={1}>
+								<div className="posWritingCat">
+									<Image
+										className=""
+										src="../../src/assets/img/write.png"
+										alt="Image de chat qui écrit"
+									/>
+								</div>
 							</Col>
 						</Row>
-						<Row md={3} className="g-0 d-flex flew-wrap">
+						<Row className="g-0 text-secondary text-center justify-content-center align-items-center m-5 p-5">
+							<h4 className="p-3">
+								Bienvenue sur Bocafina,
+								<br />
+								votre compagnon culinaire pour des recettes gourmandes et
+								personnalisées !
+								<br />
+								Planifiez vos repas, créez vos propres recettes et transformez
+								vos ingrédients en listes de courses en un clic.
+								<br />
+								Bon appétit et à vos fourneaux !
+							</h4>
+						</Row>
+						<Row className="my-5 g-0 ">
+							<Col >
+								<div className="btn-connexion">
+									<Link to="">
+										<BtnBlackGreen btnName="envie de petit-déjeuner ?" />
+									</Link>
+								</div>
+							</Col>
+							<Col >
+								<div className="btn-connexion">
+									<Link to="">
+										<BtnBlackGreen btnName="envie de déjeuner ?" />
+									</Link>
+								</div>
+							</Col>
+							<Col >
+								<div className="btn-connexion">
+									<Link to="">
+										<BtnBlackGreen btnName="envie de dîner ?" />
+									</Link>
+								</div>
+							</Col>
+						</Row>
+						<Row md={3} className="g-0 d-flex flew-wrap ms-3 marginRightDiv">
 							{RecipesList}
 						</Row>
 					</Col>

@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 import HomeScreen from "./screen/HomeScreen/HomeScreen";
 import SearchScreen from "./screen/SearchScreen";
@@ -15,7 +16,7 @@ import CreateAccountScreen from "./screen/CreateAccountScreen/CreateAccountScree
 function App() {
   return (
     <>
-      <div className="main-content">
+      <Container fluid className="main-content g-0">
         <Routes>
           
           <Route path="/" element={<HomeScreen />} />
@@ -38,7 +39,7 @@ function App() {
           <Route pathe="/page_not_found" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </div>
+      </Container>
 
       <NavbarMobile />
     </>

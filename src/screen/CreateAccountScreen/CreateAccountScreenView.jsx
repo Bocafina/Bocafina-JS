@@ -58,7 +58,7 @@ const CreateAccountScreenView = (props) => {
             vérification mot de passe *
           </label>
           <input
-            className="w-100  mx-3 p-1 rounded-3 bg-transparent inputStyle form-control"
+            className="w-100 mx-3 p-1 rounded-3 bg-transparent inputStyle form-control"
             name="password-verification-CA"
             id="password-verification-CA"
           />
