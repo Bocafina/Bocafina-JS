@@ -5,19 +5,21 @@
 		width: 5vw;
 	}
 }
-@media (min-width: 769px){
-	col {
-		min-height: 100vh;
+@media (min-width: 769px) {
+	.desktopSize {
+		.row {
+			margin: 15px 0;
+		}
 	}
-.greyBlock {
-	width: 25vw;
-	min-height: 100vh;
-	background-color: $primary;
-}
 
+	.greyBlock {
+		width: 25vw;
+		background-color: $primary;
+
+	}
 }
-@media (min-width: 1201px){
-.greyBlock {
-	max-width: 350px;;
-}
+@media (min-width: 1201px) {
+	.greyBlock {
+		max-width: 350px !important;
+	}
 }

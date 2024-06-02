@@ -45,13 +45,10 @@ h5 {
   @extend %flex-between;
 }
 
-//media queries navbar
+//media queries container-fluid
 @media (min-width: 769px){
   .container-fluid {
-    min-height: 100vh;
-	}
-	.nav-link {
-		display: flex !important;
+    padding-right: 0;
 	}
   
 }

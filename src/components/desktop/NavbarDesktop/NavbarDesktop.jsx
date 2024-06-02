@@ -6,7 +6,6 @@ import Nav from "react-bootstrap/Nav";
 const NavbarDesktop = () => {
 	return (
 		<>
-			<div className="sticky-top">
 				<Nav className="my-5 mx-4 flex-column align-content-baseline gap-5 w-75">
 					<NavbarIcon icon="home" name="Acceuil" to="/" />
 					<NavbarIcon icon="search" name="Recherche" to="/search" />
@@ -14,7 +13,6 @@ const NavbarDesktop = () => {
 					<NavbarIcon icon="menus" name="Planificateur" to="/menus" />
 					<NavbarIcon icon="groceries" name="Courses" to="/groceries" />
 				</Nav>
-			</div>
 		</>
 	);
 };
