@@ -9,6 +9,7 @@ import "./homeScreen.scss";
 import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
 import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
 import NavbarDesktop from "../../components/desktop/NavbarDesktop/NavbarDesktop";
+import SearchBar from "../../components/common/SearchBar/SearchBar";
 
 export default function HomeScreen(props) {
 	let homeScreenRecipes = homeScreenRecipesData;
@@ -82,12 +83,14 @@ export default function HomeScreen(props) {
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
 					</Col>
 					{/* FIN colonne navbar */}
-					
+
 					{/* Colonne contenu principal */}
 					<Col md={8} className="">
-						<Row className="g-0">
+						<Row className="ms-5 bg-primary g-0">
 							<Col md={6}>
-								<div className="text-secondary ms-5">ou suis je ?</div>
+								<div className=" text-secondary ">
+									<SearchBar />
+								</div>
 							</Col>
 							<Col md={3} className="text-secondary">
 								rien
@@ -96,7 +99,7 @@ export default function HomeScreen(props) {
 								bouton
 							</Col>
 						</Row>
-						<Row md={3} className="g-0 d-flex flew-wrap">
+						<Row md={3} className="g-0 d-flex flew-wrap ms-5">
 							{RecipesList}
 						</Row>
 					</Col>
