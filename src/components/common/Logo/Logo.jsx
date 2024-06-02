@@ -6,10 +6,10 @@ const Logo = () => {
 	return (
 		<>
 			<div className="wrapper mt-3 rounded-3 position-relative">
-				<Row className="sizeWelcome me-2 d-flex justify-content-end w-100">
+				<Row className="sizeWelcome me-2 d-flex justify-content-end w-100 g-0">
 					Bienvenue sur
 				</Row>
-				<Row className="flex-nowrap">
+				<Row className="flex-nowrap g-0">
 					<Col className="ms-1 pb-2 sizeLogo">
 						<Image
 							className=""

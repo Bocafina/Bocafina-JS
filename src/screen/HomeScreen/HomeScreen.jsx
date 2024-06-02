@@ -15,14 +15,15 @@ export default function HomeScreen(props) {
 	let homeScreenRecipes = homeScreenRecipesData;
 
 	const RecipesList = homeScreenRecipes.map((recipes) => (
-		<RecipesCardDisplay
-			to={recipes.recipeTitle}
-			key={recipes.id}
-			isHomeScreen={true}
-			imageSrc={recipes.imageSrc}
-			profilName={recipes.profilName}
-			recipeTitle={recipes.recipeTitle}
-		/>
+		<Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} key={recipes.id}>
+			<RecipesCardDisplay
+				to={recipes.recipeTitle}
+				isHomeScreen={true}
+				imageSrc={recipes.imageSrc}
+				profilName={recipes.profilName}
+				recipeTitle={recipes.recipeTitle}
+			/>
+		</Col>
 	));
 
 	return (
@@ -86,7 +87,7 @@ export default function HomeScreen(props) {
 
 					{/* Colonne contenu principal */}
 					<Col md={9} className="">
-						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 position-relative marginTopDiv">
+						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 position-relative marginRightDiv">
 							<Col md={6}>
 								<div className="text-secondary p-2">
 									<SearchBarDesktop />
@@ -112,7 +113,7 @@ export default function HomeScreen(props) {
 								</div>
 							</Col>
 						</Row>
-						<Row className="text-secondary text-center justify-content-center align-items-center m-5 p-5">
+						<Row className="g-0 text-secondary text-center justify-content-center align-items-center m-5 p-5">
 							<h4 className="p-3">
 								Bienvenue sur Bocafina,
 								<br />
@@ -125,22 +126,22 @@ export default function HomeScreen(props) {
 								Bon appétit et à vos fourneaux !
 							</h4>
 						</Row>
-						<Row className="my-5">
-							<Col md={4}>
+						<Row className="my-5 g-0 ">
+							<Col >
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de petit-déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col md={4}>
+							<Col >
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col md={4}>
+							<Col >
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de dîner ?" />
@@ -148,7 +149,7 @@ export default function HomeScreen(props) {
 								</div>
 							</Col>
 						</Row>
-						<Row md={3} className="g-0 d-flex flew-wrap ms-5">
+						<Row md={3} className="g-0 d-flex flew-wrap ms-3 marginRightDiv">
 							{RecipesList}
 						</Row>
 					</Col>
