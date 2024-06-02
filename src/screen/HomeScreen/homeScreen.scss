@@ -1,25 +1,66 @@
 @import "../../assets/styles/variables";
+@import "/src/assets/styles/mixins";
 
 .sizeNotif {
 	img {
 		width: 5vw;
 	}
 }
-@media (min-width: 769px) {
+
+@media (min-width: 768px) {
 	.desktopSize {
 		.row {
 			margin: 15px 0;
+		}
+		.btn-connexion {
+			.btn-BG .btn.btn-primary {
+				background-color: black;
+				font-size: 0.9rem !important;
+				flex-wrap: nowrap !important;
+			}
+		}
+	}
+	// image du chat
+	// ($top, $right, $bottom, $left)
+	.posWritingCat {
+		img {
+			height: 8vh;
+			@include absolute-el(50px, 5px, null, null);
+			z-index: 9999;
 		}
 	}
 
 	.greyBlock {
 		width: 25vw;
 		background-color: $primary;
-
 	}
 }
-@media (min-width: 1201px) {
+@media (min-width: 992px) {
+	.posWritingCat {
+		img {
+			height: 8vh;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
 	.greyBlock {
 		max-width: 350px !important;
+	}
+	.posBtn {
+		justify-content: center;
+	}
+}
+@media (min-width: 1400px) {
+	.posWritingCat {
+		img {
+			height: 8vh;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+	.marginTopDiv {
+		margin-right: 20px !important;
 	}
 }

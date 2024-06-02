@@ -1,0 +1,15 @@
+@import "/src/assets/styles/variables";
+
+::placeholder {
+	color: #a69e9e !important;
+	font-family: "Lato-regular";
+	font-size: 0.9rem;
+}
+
+input.form-control {
+  // border: 1px solid $tertiary !important;
+  border: none !important;
+}
+.borderColor {
+border: 1px solid $tertiary !important;
+}
