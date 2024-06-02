@@ -1,17 +1,17 @@
 import NavbarIcon from "../../common/NavbarIcon/NavbarIcon";
-import "./navbarMobile.scss";
+import "./navbarDesktop.scss";
 
 import Nav from "react-bootstrap/Nav";
 
-const NavbarMobile = () => {
+const NavbarDesktop = () => {
 	return (
 		<>
-			<div className="navbar-mobile container-fluid d-md-none">
-				<Nav className="justify-content-around align-items-baseline">
+			<div className="sticky-top">
+				<Nav className="my-5 mx-4 flex-column align-content-baseline gap-5 w-75">
 					<NavbarIcon icon="home" name="Acceuil" to="/" />
 					<NavbarIcon icon="search" name="Recherche" to="/search" />
 					<NavbarIcon icon="cookbook" name="CookBook" to="/cookbook" />
-					<NavbarIcon icon="menus" name="Planner" to="/menus" />
+					<NavbarIcon icon="menus" name="Planificateur" to="/menus" />
 					<NavbarIcon icon="groceries" name="Courses" to="/groceries" />
 				</Nav>
 			</div>
@@ -19,4 +19,4 @@ const NavbarMobile = () => {
 	);
 };
 
-export default NavbarMobile;
+export default NavbarDesktop;

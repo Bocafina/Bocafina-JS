@@ -26,3 +26,23 @@
 		color: $tertiary;
 	}
 }
+
+@media (min-width: 769px) {
+	.icon-wrapper {
+		width: 100%;
+		font-size: 1.2rem;
+		img {
+			width: 25px;
+			margin-left: 20px;
+		}
+		p {
+			margin-bottom: 0;
+			padding-right: 20px;
+		}
+	}
+	.sizeNavbarDesktopIcon {
+		.nav-link {
+			--bs-nav-link-padding-x: none;
+		}
+	}
+}
