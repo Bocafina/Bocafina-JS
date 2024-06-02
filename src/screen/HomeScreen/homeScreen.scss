@@ -1,5 +1,25 @@
+@import "../../assets/styles/variables";
+
 .sizeNotif {
 	img {
 		width: 5vw;
+	}
+}
+@media (min-width: 769px) {
+	.desktopSize {
+		.row {
+			margin: 15px 0;
+		}
+	}
+
+	.greyBlock {
+		width: 25vw;
+		background-color: $primary;
+
+	}
+}
+@media (min-width: 1201px) {
+	.greyBlock {
+		max-width: 350px !important;
 	}
 }

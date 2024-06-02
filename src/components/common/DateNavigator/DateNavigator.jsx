@@ -8,7 +8,7 @@ const DateNavigator = () => {
   const { currentDate, getWeekRange, changeWeek } = useDateNavigator();
 
 	return (
-			<Row className="rowHeight align-items-center">
+			<Row className="rowHeight align-items-center g-0">
 				<Col xs={3} className="d-flex justify-content-center">
 					<Image
 						as="button"
