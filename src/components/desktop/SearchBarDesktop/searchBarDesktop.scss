@@ -6,10 +6,13 @@
 	font-size: 0.9rem;
 }
 
-input.form-control {
-  // border: 1px solid $tertiary !important;
-  border: none !important;
+@media (min-width: 768px) {
+	input.form-control {
+		border: 1px solid $tertiary !important;
+		border: none !important;
+	}
 }
+
 .borderColor {
-border: 1px solid $tertiary !important;
+	border: 1px solid $tertiary !important;
 }

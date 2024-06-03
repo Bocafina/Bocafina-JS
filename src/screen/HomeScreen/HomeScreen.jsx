@@ -127,21 +127,21 @@ export default function HomeScreen(props) {
 							</h4>
 						</Row>
 						<Row className="my-5 g-0 ">
-							<Col >
+							<Col>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de petit-déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col >
+							<Col>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col >
+							<Col>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de dîner ?" />
