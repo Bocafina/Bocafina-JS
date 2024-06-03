@@ -1,5 +1,8 @@
-import addCookbookIcon from ".addCookbookIcon.svg";
-import cookbookIcon from "./cookbookIcon.svg";
-import groceriesIcon from "./groceriesIcon.svg";
+import addCookBookIcon from "./addCookbookIcon.svg";
+import leftArrowIcon from "./leftArrowIcon.svg"; 
+import rightArrowIcon from "./rightArrowIcon.svg";
+import notificationIcon from "./notificationIcon.svg";
+import threeDotBtnIcon from "./threeDotBtnIcon.svg";
+import settingsIcon from "./settingsIcon.svg";
 
-export {addCookbookIcon, cookbookIcon, groceriesIcon}
+export { addCookBookIcon, leftArrowIcon, rightArrowIcon, notificationIcon, threeDotBtnIcon, settingsIcon}

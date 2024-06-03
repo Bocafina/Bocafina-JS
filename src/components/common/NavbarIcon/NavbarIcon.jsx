@@ -1,21 +1,19 @@
+import "./navbarIcon.scss";
+
+import * as navbarIcon from "../../../assets/svg/icon/_navbarIcon"
+
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { NavItem } from "react-bootstrap";
 
-import homeIcon from "../../../assets/svg/homeIcon.svg";
-import searchIcon from "../../../assets/svg/searchIcon.svg";
-import cookbookIcon from "../../../assets/svg/cookbookIcon.svg";
-import menusIcon from "../../../assets/svg/menusIcon.svg";
-import groceriesIcon from "../../../assets/svg/groceriesIcon.svg";
 
-import "./navbarIcon.scss";
 
 const NavbarIcon = (props) => {
 	const iconMapping = {
-		home: homeIcon,
-		search: searchIcon,
-		cookbook: cookbookIcon,
-		menus: menusIcon,
-		groceries: groceriesIcon,
+		home: navbarIcon.homeIcon,
+		search: navbarIcon.searchIcon,
+		cookbook: navbarIcon.cookbookIcon,
+		menus: navbarIcon.menusIcon,
+		groceries: navbarIcon.groceriesIcon,
 	};
 
 	const resolvedPath = useResolvedPath(props.to);
