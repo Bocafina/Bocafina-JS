@@ -5,6 +5,7 @@ import ThreeDotBtn from "./ThreeDotBtn/TreeDotBtn";
 import ProfilePic from "../ProfilePic/ProfilePic";
 
 import "./recipesCardDisplay.scss";
+import recepieImgTest from "../../../assets/img/imgTest.png"
 
 const RecipesCardDisplay = (props) => {
   const hasHeader = props.isHomeScreen;
@@ -24,7 +25,7 @@ const RecipesCardDisplay = (props) => {
           </div>
         </Card.Header>
 
-        <Card.Img className="rounded-0" variant="top" src={props.imageSrc} />
+        <Card.Img className="rounded-0" variant="top" src={recepieImgTest} />
       </>
     );
   } else {

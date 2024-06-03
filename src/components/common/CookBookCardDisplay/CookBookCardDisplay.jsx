@@ -10,7 +10,7 @@ const CookBookCardDisplay = () => {
       shadow="shadow-card"
       key={recipes.id}
       hasHeader={false}
-      imageSrc={recipes.imageSrc}
+      // imageSrc={recipes.imageSrc}
       profilName={recipes.profilName}
       recipeTitle={recipes.recipeTitle}
     />
