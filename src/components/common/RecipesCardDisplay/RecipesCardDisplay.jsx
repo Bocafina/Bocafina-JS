@@ -17,7 +17,7 @@ const RecipesCardDisplay = (props) => {
           <div className="recipes-card-section flex-between">
             <div className="d-flex align-items-center">
               <ProfilePic profilePicSrc="profilepiccat.png" />
-              <h5 className="text-secondary">{props.profilName}</h5>
+              <h5 className="text-secondary ms-2">{props.profilName}</h5>
             </div>
 
             <ThreeDotBtn />

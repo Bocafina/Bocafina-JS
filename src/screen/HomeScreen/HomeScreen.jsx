@@ -42,7 +42,7 @@ export default function HomeScreen() {
 							alt="Notification icon"
 						/>
 					</div>
-					<div className="posProfilePic">
+					<div className="profilePicSize">
 						<Link to="/profiles/login">
 							<ProfilePic profilePicSrc="profilepiccat.png" />
 						</Link>
@@ -59,8 +59,8 @@ export default function HomeScreen() {
 						<div>
 							<Logo />
 						</div>
-						<div className="d-flex justify-content-center">
-							<div className="posProfilePic d-flex flex-column align-items-center">
+						<div className="d-flex justify-content-center mt-5">
+							<div className="d-flex flex-column align-items-center mt-5">
 								<Link to="/profiles/login">
 									<ProfilePic profilePicSrc="profilepiccat.png" />
 								</Link>

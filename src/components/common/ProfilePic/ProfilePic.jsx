@@ -4,7 +4,7 @@ import "./profilePic.scss";
 const ProfilePic = (props) => {
 	return (
 		<>
-			<div className="profilePicSize me-2 d-flex position-relative">
+			<div className="profilePicSize d-flex position-relative">
 				<div className="profilePicFrameSize">
 					<Image
 						className="position-absolute z-2"
