@@ -11,7 +11,8 @@ import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
 import NavbarDesktop from "../../components/desktop/NavbarDesktop/NavbarDesktop";
 import SearchBarDesktop from "../../components/desktop/SearchBarDesktop/SearchBarDesktop";
 
-export default function HomeScreen(props) {
+export default function HomeScreen() {
+	const userUUID = "catUserUUID";
 	let homeScreenRecipes = homeScreenRecipesData;
 
 	const RecipesList = homeScreenRecipes.map((recipes) => (
@@ -63,9 +64,7 @@ export default function HomeScreen(props) {
 								<Link to="/profiles/login">
 									<ProfilePic profilePicSrc="profilepiccat.png" />
 								</Link>
-								<p className="text-secondary mt-2 font-bold">
-									{props.userUUID} (CatUserUUID here)
-								</p>
+								<p className="text-secondary mt-2 font-bold">{userUUID}</p>
 							</div>
 						</div>
 						{/* <div className="sizeNotif">
@@ -127,21 +126,21 @@ export default function HomeScreen(props) {
 							</h4>
 						</Row>
 						<Row className="my-5 g-0 ">
-							<Col>
+							<Col md={6} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de petit-déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col>
+							<Col md={6} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col>
+							<Col md={12} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de dîner ?" />
