@@ -53,9 +53,9 @@ export default function HomeScreen() {
 
 			{/* écrans dekstop */}
 			<Container fluid className="d-none d-md-block desktopSize">
-				<Row className="g-0">
+				<Row className="g-0 screenSize">
 					{/* Colonne navbar */}
-					<Col md={3} className="greyBlock rounded-3">
+					<Col md={3} className="greyBlock rounded-3 btn-connexion">
 						<div>
 							<Logo />
 						</div>
@@ -150,6 +150,82 @@ export default function HomeScreen() {
 						</Row>
 						<Row md={3} className="g-0 d-flex flew-wrap ms-3 marginRightDiv">
 							{RecipesList}
+						</Row>
+
+						{/* footer */}
+						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 mb-0 marginRightDiv">
+							<Col
+								md={4}
+								className="my-3 d-flex flex-column align-items-end pe-4"
+							>
+								<span className="text-secondary font-bold p-1">
+									Suivez-nous sur :
+								</span>
+								<div className="ms-4">
+									<a
+										href="https://www.instagram.com/simonscatofficial/?hl=fr"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{/* tjs mettre avec target_blank : */}
+										{/* "noopener" empêche la nouvelle page d'accéder à window.opener pour des raisons de sécurité */}
+										{/* "noreferrer" empêche l'envoi de l'URL de la page d'origine à la nouvelle page pour protéger la confidentialité */}
+										<Image
+											className="mt-1 me-4"
+											src="../../src/assets/svg/logoInsta.svg"
+											alt="Logo Instagram"
+										/>
+									</a>
+									<a
+										href="https://www.facebook.com/simonscat/?locale=fr_FR"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Image
+											className="mt-1 me-4"
+											src="../../src/assets/svg/logoFacebook.svg"
+											alt="Logo Facebook"
+										/>
+									</a>
+									<a
+										href="https://x.com/SimonsCat"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Image
+											className="mt-1 me-2"
+											src="../../src/assets/svg/logoTwitter.svg"
+											alt="Logo X (ex Twitter)"
+										/>
+									</a>
+								</div>
+							</Col>
+							<Col md={1}>
+								<div className="sizeArrowCat">
+									<Image
+										className=""
+										src="../../src/assets/img/thatway.png"
+										alt="Chat qui montre les réseaux sociaux"
+									/>
+								</div>
+							</Col>
+							<Col md={3}></Col>
+							<Col
+								md={4}
+								className="my-3 d-flex align-items-center pe-4"
+							>
+								<div className="text-secondary pe-3">
+									<span className="">Une question ? Un avis ? <br/> Contactez-nous :</span>
+								</div>
+
+								<a href="https://x.com/SimonsCat">
+									<Image
+										className="mt-1 me-2"
+										src="../../src/assets/svg/contact.svg"
+										alt="Image cliquable pour nous contacter"
+									/>
+								</a>
+							</Col>
 						</Row>
 					</Col>
 				</Row>

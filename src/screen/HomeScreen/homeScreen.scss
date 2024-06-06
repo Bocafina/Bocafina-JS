@@ -12,6 +12,10 @@
 	flex-grow: 0.9 !important;
 }
 
+.screenSize {
+	min-height: 100vh;
+}
+
 @media (min-width: 768px) {
 	.desktopSize {
 		.row {
@@ -24,13 +28,20 @@
 		}
 	}
 
-	// image du chat
+	// image du chat qui écrit
 	// ($top, $right, $bottom, $left)
 	.posWritingCat {
 		img {
 			height: 8vh;
 			@include absolute-el(50px, 5px, null, null);
 			z-index: 9999;
+		}
+	}
+
+	// image du chat avec la flèche
+	.sizeArrowCat {
+		img {
+			height: 7vh;
 		}
 	}
 
@@ -56,11 +67,16 @@
 	}
 }
 @media (min-width: 1400px) {
+	.desktopSize {
+		.btn-connexion {
+			.btn-BG .btn.btn-primary {
+				font-size: 1rem !important;
+			}
+		}
+	}
 	.posWritingCat {
 		img {
 			height: 8vh;
-			min-height: 90px;
-			@include absolute-el(40px, 5px, null, null);
 		}
 	}
 }
