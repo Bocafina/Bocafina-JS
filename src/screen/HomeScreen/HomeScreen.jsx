@@ -85,7 +85,7 @@ export default function HomeScreen() {
 					{/* FIN colonne navbar */}
 
 					{/* Colonne contenu principal */}
-					<Col md={9} className="">
+					<Col md={9} className="mainColSize">
 						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 position-relative marginRightDiv">
 							<Col md={6}>
 								<div className="text-secondary p-2">

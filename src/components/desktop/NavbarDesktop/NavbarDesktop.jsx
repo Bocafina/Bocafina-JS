@@ -10,7 +10,7 @@ const NavbarDesktop = () => {
 		<>
 			<div className="navbar-desktop">
 			<Nav className="my-5 mx-4 flex-column align-content-baseline gap-5 w-75">
-				<NavbarIcon icon="home" name="Acceuil" to="/" />
+				<NavbarIcon icon="home" name="Accueil" to="/" />
 				<NavbarIcon icon="search" name="Recherche" to="/search" />
 				<NavbarIcon icon="cookbook" name="CookBook" to="/cookbook" />
 				<NavbarIcon icon="menus" name="Planner" to="/menus" />
