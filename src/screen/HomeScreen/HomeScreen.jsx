@@ -11,7 +11,8 @@ import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
 import NavbarDesktop from "../../components/desktop/NavbarDesktop/NavbarDesktop";
 import SearchBarDesktop from "../../components/desktop/SearchBarDesktop/SearchBarDesktop";
 
-export default function HomeScreen(props) {
+export default function HomeScreen() {
+	const userUUID = "catUserUUID";
 	let homeScreenRecipes = homeScreenRecipesData;
 
 	const RecipesList = homeScreenRecipes.map((recipes) => (
@@ -41,7 +42,7 @@ export default function HomeScreen(props) {
 							alt="Notification icon"
 						/>
 					</div>
-					<div className="posProfilePic">
+					<div className="profilePicSize">
 						<Link to="/profiles/login">
 							<ProfilePic profilePicSrc="profilepiccat.png" />
 						</Link>
@@ -58,14 +59,12 @@ export default function HomeScreen(props) {
 						<div>
 							<Logo />
 						</div>
-						<div className="d-flex justify-content-center">
-							<div className="posProfilePic d-flex flex-column align-items-center">
+						<div className="d-flex justify-content-center mt-5">
+							<div className="d-flex flex-column align-items-center mt-5">
 								<Link to="/profiles/login">
 									<ProfilePic profilePicSrc="profilepiccat.png" />
 								</Link>
-								<p className="text-secondary mt-2 font-bold">
-									{props.userUUID} (CatUserUUID here)
-								</p>
+								<p className="text-secondary mt-2 font-bold">{userUUID}</p>
 							</div>
 						</div>
 						{/* <div className="sizeNotif">
@@ -86,7 +85,7 @@ export default function HomeScreen(props) {
 					{/* FIN colonne navbar */}
 
 					{/* Colonne contenu principal */}
-					<Col md={9} className="">
+					<Col md={9} className="mainColSize">
 						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 position-relative marginRightDiv">
 							<Col md={6}>
 								<div className="text-secondary p-2">
@@ -127,21 +126,21 @@ export default function HomeScreen(props) {
 							</h4>
 						</Row>
 						<Row className="my-5 g-0 ">
-							<Col>
+							<Col md={6} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de petit-déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col>
+							<Col md={6} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de déjeuner ?" />
 									</Link>
 								</div>
 							</Col>
-							<Col>
+							<Col md={12} lg={4}>
 								<div className="btn-connexion">
 									<Link to="">
 										<BtnBlackGreen btnName="envie de dîner ?" />

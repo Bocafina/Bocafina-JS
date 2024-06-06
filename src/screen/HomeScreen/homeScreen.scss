@@ -7,6 +7,11 @@
 	}
 }
 
+//taille de la main col
+.mainColSize {
+	flex-grow: 0.9 !important;
+}
+
 @media (min-width: 768px) {
 	.desktopSize {
 		.row {
@@ -54,6 +59,8 @@
 	.posWritingCat {
 		img {
 			height: 8vh;
+			min-height: 90px;
+			@include absolute-el(40px, 5px, null, null);
 		}
 	}
 }
