@@ -148,12 +148,12 @@ export default function HomeScreen() {
 								</div>
 							</Col>
 						</Row>
-						<Row md={3} className="g-0 d-flex flew-wrap ms-3 marginRightDiv">
+						<Row md={3} className="g-0 d-flex flew-wrap ms-3">
 							{RecipesList}
 						</Row>
 
 						{/* footer */}
-						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 mb-0 marginRightDiv">
+						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 mb-0">
 							<Col
 								md={4}
 								className="my-3 d-flex flex-column align-items-end pe-4"
@@ -201,7 +201,7 @@ export default function HomeScreen() {
 								</div>
 							</Col>
 							<Col md={1}>
-								<div className="sizeArrowCat">
+								<div className="sizeArrowCat pt-1">
 									<Image
 										className=""
 										src="../../src/assets/img/thatway.png"

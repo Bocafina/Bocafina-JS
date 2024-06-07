@@ -20,15 +20,6 @@
 	font-weight: 700;
 }
 
-.main-content {
-	padding-bottom: 4.5rem; /* valeur selon hauteur navbar */
-}
-@media (min-width: 768px) {
-	.main-content {
-		padding-bottom: 0;
-	}
-}
-
 body {
 	background-color: #000 !important;
 	font-family: "Lato-Regular", sans-serif;
@@ -48,4 +39,14 @@ h5 {
 	.container-fluid {
 		padding-right: 0;
 	}
+// .main-content {
+// 		padding-bottom: 5rem;
+// 	}
+}
+
+// valeur selon hauteur navbar
+@media (max-width: 768px) {
+.main-content {
+	padding-bottom: 6.5rem;
+}
 }

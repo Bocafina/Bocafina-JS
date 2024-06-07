@@ -41,7 +41,7 @@
 	// image du chat avec la flèche
 	.sizeArrowCat {
 		img {
-			height: 7vh;
+			height: 6vh;
 		}
 	}
 
@@ -79,10 +79,9 @@
 			height: 8vh;
 		}
 	}
-}
-
-@media (min-width: 768px) and (max-width: 1400px) {
-	.marginRightDiv {
-		margin-right: 20px !important;
+	.mainColSize {
+		h4 {
+			padding: 0 10px;
+		}
 	}
 }
