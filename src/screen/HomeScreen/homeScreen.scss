@@ -13,7 +13,7 @@
 }
 
 .screenSize {
-	min-height: 100vh;
+	min-height: 97vh;
 }
 
 @media (min-width: 768px) {
@@ -84,4 +84,18 @@
 			padding: 0 10px;
 		}
 	}
+}
+
+// scroll sur les cards
+.desktopSize {
+	.sizeScroll {
+		height: 450px;
+	}
+}
+@media (min-width: 1400px) {
+	.desktopSize {
+	.sizeScroll {
+		height: 500px;
+	}
+}
 }

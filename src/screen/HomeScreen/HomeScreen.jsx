@@ -26,6 +26,7 @@ export default function HomeScreen() {
 			/>
 		</Col>
 	));
+	// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
 
 	return (
 		<>
@@ -74,14 +75,85 @@ export default function HomeScreen() {
 								alt="Notification icon"
 							/>
 						</div> */}
-
 						<BtnBlackGreen btnName="modifier le profil" />
 						{/* ligne de séparation */}
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
 						<NavbarDesktop />
 						{/* ligne de séparation */}
 						<hr className="text-secondary my-4 mx-3 opacity-line" />
+
+						{/* réseaux sociaux et contact */}
+						<Row className="my-3 pe-4 d-flex flex-wrap">
+							<Col md={6} className="ms-4">
+								<p className="text-secondary font-bold p-1">
+									Suivez-nous sur :
+								</p>
+								<a
+									href="https://www.instagram.com/simonscatofficial/?hl=fr"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{/* tjs mettre avec target_blank : */}
+									{/* "noopener" empêche la nouvelle page d'accéder à window.opener pour des raisons de sécurité */}
+									{/* "noreferrer" empêche l'envoi de l'URL de la page d'origine à la nouvelle page pour protéger la confidentialité */}
+									<Image
+										className="me-4"
+										src="../../src/assets/svg/logoInsta.svg"
+										alt="Logo Instagram"
+									/>
+								</a>
+								<a
+									href="https://www.facebook.com/simonscat/?locale=fr_FR"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										className="me-4"
+										src="../../src/assets/svg/logoFacebook.svg"
+										alt="Logo Facebook"
+									/>
+								</a>
+								<a
+									href="https://x.com/SimonsCat"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										className="me-2"
+										src="../../src/assets/svg/logoTwitter.svg"
+										alt="Logo X (ex Twitter)"
+									/>
+								</a>
+							</Col>
+							<Col md={2} className="d-flex justify-content-start">
+								<div className="sizeArrowCat pt-1">
+									<Image
+										className=""
+										src="../../src/assets/img/thatway.png"
+										alt="Chat qui montre les réseaux sociaux"
+									/>
+								</div>
+							</Col>
+						</Row>
+						<Row className="d-flex justify-content-center align-items-center">
+							<div className="text-secondary mt-5 mb-2">
+								<span className="">
+									Une question ? Un avis ? Contactez-nous :
+								</span>
+							</div>
+							<div className="">
+								<a href="mailto:adresse@example.com?subject=Sujet%20du%20mail&body=Bonjour%2C%20je%20souhaite%20vous%20contacter%20concernant...">
+									<Image
+										className="mt-1 me-2"
+										src="../../src/assets/svg/contact.svg"
+										alt="Image cliquable pour nous contacter"
+									/>
+								</a>
+							</div>
+						</Row>
+						{/* FIN réseaux sociaux et contact */}
 					</Col>
+					{/* FIN navbar */}
 					{/* FIN colonne navbar */}
 
 					{/* Colonne contenu principal */}
@@ -148,84 +220,11 @@ export default function HomeScreen() {
 								</div>
 							</Col>
 						</Row>
-						<Row md={3} className="g-0 d-flex flew-wrap ms-3">
+						<Row
+							md={3}
+							className="g-0 d-flex flew-wrap overflow-y-scroll ms-3 sizeScroll"
+						>
 							{RecipesList}
-						</Row>
-
-						{/* footer */}
-						<Row className="bg-primary ms-4 mt-0 rounded-3 g-0 mb-0">
-							<Col
-								md={4}
-								className="my-3 d-flex flex-column align-items-end pe-4"
-							>
-								<span className="text-secondary font-bold p-1">
-									Suivez-nous sur :
-								</span>
-								<div className="ms-4">
-									<a
-										href="https://www.instagram.com/simonscatofficial/?hl=fr"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										{/* tjs mettre avec target_blank : */}
-										{/* "noopener" empêche la nouvelle page d'accéder à window.opener pour des raisons de sécurité */}
-										{/* "noreferrer" empêche l'envoi de l'URL de la page d'origine à la nouvelle page pour protéger la confidentialité */}
-										<Image
-											className="mt-1 me-4"
-											src="../../src/assets/svg/logoInsta.svg"
-											alt="Logo Instagram"
-										/>
-									</a>
-									<a
-										href="https://www.facebook.com/simonscat/?locale=fr_FR"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<Image
-											className="mt-1 me-4"
-											src="../../src/assets/svg/logoFacebook.svg"
-											alt="Logo Facebook"
-										/>
-									</a>
-									<a
-										href="https://x.com/SimonsCat"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<Image
-											className="mt-1 me-2"
-											src="../../src/assets/svg/logoTwitter.svg"
-											alt="Logo X (ex Twitter)"
-										/>
-									</a>
-								</div>
-							</Col>
-							<Col md={1}>
-								<div className="sizeArrowCat pt-1">
-									<Image
-										className=""
-										src="../../src/assets/img/thatway.png"
-										alt="Chat qui montre les réseaux sociaux"
-									/>
-								</div>
-							</Col>
-							<Col md={3}></Col>
-							<Col
-								md={4}
-								className="my-3 d-flex align-items-center pe-4"
-							>
-								<div className="text-secondary pe-3">
-									<span className="">Une question ? Un avis ? <br/> Contactez-nous :</span>
-								</div>
-
-								<a href="https://x.com/SimonsCat">
-									<Image
-										className="mt-1 me-2"
-										src="../../src/assets/svg/contact.svg"
-										alt="Image cliquable pour nous contacter"
-									/>
-								</a>
-							</Col>
 						</Row>
 					</Col>
 				</Row>
@@ -233,5 +232,3 @@ export default function HomeScreen() {
 		</>
 	);
 }
-
-// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
