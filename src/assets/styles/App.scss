@@ -26,8 +26,7 @@ body {
 }
 
 aside {
-width: 250px;
-
+	width: 250px;
 }
 
 .app-container {
@@ -39,7 +38,6 @@ width: 250px;
 	--bs-gutter-x: 0 !important;
 	--bs-gutter-y: 0 !important;
 }
-
 
 // titres de nos card -- h4 réservé aux titres des pages
 h5 {
@@ -55,9 +53,9 @@ h5 {
 	.container-fluid {
 		padding-right: 0;
 	}
-// .main-content {
-// 		padding-bottom: 5rem;
-// 	}
+	// .main-content {
+	// 		padding-bottom: 5rem;
+	// 	}
 }
 
 // valeur selon hauteur navbar

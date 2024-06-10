@@ -14,7 +14,7 @@ const NavbarDesktop = () => {
 	return (
 		<>
 			<aside className="bg-primary me-2 p-1 rounded-3 d-none d-md-block">
-				<div className="d-flex flex-column justify-content-between flex-grow-1 h-100">
+				<div className="d-flex flex-column justify-content-between h-100">
 					<div className="d-flex flex-column">
 						<Logo />
 						<ProfilePic profilePicSrc="profilepiccat.png" />
