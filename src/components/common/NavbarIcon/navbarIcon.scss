@@ -36,10 +36,10 @@
 @media (min-width: 768px) {
 	.icon-wrapper {
 		width: 100%;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		img {
 			width: 25px;
-			margin-left: 20px;
+			margin: 0 20px;
 		}
 		p {
 			margin-bottom: 0;
@@ -47,9 +47,6 @@
 		}
 	}
 	.sizeNavbarDesktopIcon {
-		img {
-			width: 20px;
-		}
 		.nav-link {
 			--bs-nav-link-padding-x: none;
 		}
