@@ -5,22 +5,25 @@ import "./logo.scss";
 const Logo = () => {
 	return (
 		<>
-			<div className="wrapper mt-3 rounded-3 position-relative">
-				<Row className="sizeWelcome pe-2 d-flex justify-content-end w-100 g-0">
-					Bienvenue sur
+			<div className="bg-primary rounded-3">
+				<Row>
+					<span className="text-secondary d-flex justify-content-end pe-2">
+						Bienvenue sur
+					</span>
 				</Row>
-				<Row className="flex-nowrap g-0">
-					<Col className="ms-1 pb-2 sizeLogo">
+				<Row>
+					<Col xs={8} className="d-flex align-items-center">
 						<Image
-							className=""
+							className="sizeLogo mx-2"
 							src="../../src/assets/img/logo.png"
 							alt="Bocafina logo"
 						/>
 					</Col>
-					<Col className="sizeHelloCat">
+					<Col xs={4} className="d-flex align-items-center">
 						<Image
+							className="sizeHelloCat"
 							src="../../src/assets/img/hello.png"
-							alt="Simon's cat hello"
+							alt="Simon's cat dit bonjour"
 						/>
 					</Col>
 				</Row>
@@ -30,3 +33,6 @@ const Logo = () => {
 };
 
 export default Logo;
+
+
+

@@ -8,9 +8,9 @@
 }
 
 //taille de la main col
-.mainColSize {
-	flex-grow: 0.9 !important;
-}
+// .mainColSize {
+// 	flex-grow: 0.9 !important;
+// }
 
 .screenSize {
 	min-height: 97vh;
@@ -27,41 +27,8 @@
 			}
 		}
 	}
-
-	// image du chat qui écrit
-	// ($top, $right, $bottom, $left)
-	.posWritingCat {
-		img {
-			height: 8vh;
-			@include absolute-el(50px, 5px, null, null);
-			z-index: 9999;
-		}
-	}
-
-	// image du chat avec la flèche
-	.sizeArrowCat {
-		img {
-			height: 6vh;
-		}
-	}
-
-	.greyBlock {
-		width: 25vw;
-		background-color: $primary;
-	}
 }
-@media (min-width: 992px) {
-	.posWritingCat {
-		img {
-			height: 8vh;
-		}
-	}
-}
-
 @media (min-width: 1200px) {
-	.greyBlock {
-		max-width: 350px !important;
-	}
 	.posBtn {
 		justify-content: center;
 	}
@@ -74,11 +41,7 @@
 			}
 		}
 	}
-	.posWritingCat {
-		img {
-			height: 8vh;
-		}
-	}
+
 	.mainColSize {
 		h4 {
 			padding: 0 10px;

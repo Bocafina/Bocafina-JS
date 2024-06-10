@@ -26,8 +26,11 @@ const NavbarIcon = (props) => {
 	return (
 		<>
 			<NavItem className="sizeNavbarDesktopIcon">
-				<Link className="nav-link" to={props.to}>
-					<div className="icon-wrapper flex-between">
+				<Link
+					className="nav-link d-flex flex-column justify-content-center text-decoration-none"
+					to={props.to}
+				>
+					<div className="icon-wrapper d-flex align-items-center">
 						<img
 							className={isActive ? "isActive" : ""}
 							src={Icon}

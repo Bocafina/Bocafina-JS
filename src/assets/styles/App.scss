@@ -25,6 +25,21 @@ body {
 	font-family: "Lato-Regular", sans-serif;
 }
 
+aside {
+width: 250px;
+}
+
+.app-container {
+	padding: 0.6em;
+	min-height: 100vh;
+}
+
+.row {
+	--bs-gutter-x: 0 !important;
+	--bs-gutter-y: 0 !important;
+}
+
+
 // titres de nos card -- h4 réservé aux titres des pages
 h5 {
 	font-family: "Lato-Bold", sans-serif;
@@ -45,8 +60,8 @@ h5 {
 }
 
 // valeur selon hauteur navbar
-@media (max-width: 768px) {
-.main-content {
-	padding-bottom: 6.5rem;
-}
-}
+// @media (max-width: 768px) {
+// .app-container {
+// 	padding-bottom: 6.5rem;
+// }
+// }

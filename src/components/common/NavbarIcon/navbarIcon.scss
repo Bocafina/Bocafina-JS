@@ -13,11 +13,17 @@
 	p {
 		color: white;
 		font-size: 0.7rem;
-	}
+		margin-bottom: 0;	}
 
 	img {
 		max-height: 4rem;
 	}
+		.text-tertiary {
+		color: $tertiary;
+	}
+}
+
+
 	.isActive {
 		filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%)
 			hue-rotate(60deg) brightness(100%) contrast(92%);
@@ -25,7 +31,7 @@
 	.text-tertiary {
 		color: $tertiary;
 	}
-}
+
 
 @media (min-width: 768px) {
 	.icon-wrapper {
@@ -41,6 +47,9 @@
 		}
 	}
 	.sizeNavbarDesktopIcon {
+		img {
+			width: 20px;
+		}
 		.nav-link {
 			--bs-nav-link-padding-x: none;
 		}

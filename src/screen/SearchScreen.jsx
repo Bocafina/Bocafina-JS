@@ -19,11 +19,9 @@ export default function SearchScreen() {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="">
         <SearchBar />
-
         <RecipesFiltersBar />
-
         <section>{recipesList}</section>
       </div>
     </>
