@@ -7,7 +7,7 @@ import BtnBlackGreen from "../components/common/BtnBlackGreen/BtnBlackGreen";
 export default function CookBookScreen() {
   return (
 		<>
-			<div className="container-fluid">
+			<div className="">
 				<SearchBar />
 				<RecipesFiltersBar />
 				<CookBookCardDisplay />

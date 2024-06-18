@@ -2,13 +2,13 @@ import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
 
 import "./CreateAccountScreenView.scss";
 import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMoblie from "../../components/mobile/BackButton/BackButtonMobilel";
+import BackButtonMobile from "../../components/mobile/BackButton/BackButtonMobile";
 
 const CreateAccountScreenView = (props) => {
   return (
     <>
       <header>
-        <BackButtonMoblie to="/profiles/login" btnText="Créer un profil" />
+        <BackButtonMobile to="/profiles/login" btnText="Créer un profil" />
         <div className="d-flex justify-content-center m-4">
           <ProfilePic profilePicSrc="profilepiccat.png" />
         </div>
@@ -58,7 +58,7 @@ const CreateAccountScreenView = (props) => {
             vérification mot de passe *
           </label>
           <input
-            className="w-100  mx-3 p-1 rounded-3 bg-transparent inputStyle form-control"
+            className="w-100 mx-3 p-1 rounded-3 bg-transparent inputStyle form-control"
             name="password-verification-CA"
             id="password-verification-CA"
           />

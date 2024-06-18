@@ -1,25 +1,64 @@
 @import "../../assets/styles/variables";
+@import "/src/assets/styles/mixins";
 
 .sizeNotif {
 	img {
 		width: 5vw;
 	}
 }
-@media (min-width: 769px) {
+
+//taille de la main col
+// .mainColSize {
+// 	flex-grow: 0.9 !important;
+// }
+
+.screenSize {
+	min-height: 97vh;
+}
+
+@media (min-width: 768px) {
 	.desktopSize {
 		.row {
 			margin: 15px 0;
 		}
-	}
-
-	.greyBlock {
-		width: 25vw;
-		background-color: $primary;
-
+		.btn-connexion {
+			.btn-BG .btn.btn-primary {
+				font-size: 0.9rem !important;
+			}
+		}
 	}
 }
-@media (min-width: 1201px) {
-	.greyBlock {
-		max-width: 350px !important;
+@media (min-width: 1200px) {
+	.posBtn {
+		justify-content: center;
 	}
+}
+@media (min-width: 1400px) {
+	.desktopSize {
+		.btn-connexion {
+			.btn-BG .btn.btn-primary {
+				font-size: 1rem !important;
+			}
+		}
+	}
+
+	.mainColSize {
+		h4 {
+			padding: 0 10px;
+		}
+	}
+}
+
+// scroll sur les cards
+.desktopSize {
+	.sizeScroll {
+		height: 450px;
+	}
+}
+@media (min-width: 1400px) {
+	.desktopSize {
+	.sizeScroll {
+		height: 500px;
+	}
+}
 }
