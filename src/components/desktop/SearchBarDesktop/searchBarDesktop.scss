@@ -6,13 +6,25 @@
 	font-size: 0.9rem;
 }
 
+.borderColor {
+	border: 1px solid $tertiary !important;
+}
+
 @media (min-width: 768px) {
 	input.form-control {
 		border: 1px solid $tertiary !important;
 		border: none !important;
 	}
+	.sizeSearchBar {
+		::placeholder {
+			font-size: 0.7rem;
+		}
+	}
 }
-
-.borderColor {
-	border: 1px solid $tertiary !important;
+@media (min-width: 992px) {
+	.sizeSearchBar {
+		::placeholder {
+			font-size: 0.8rem;
+		}
+	}
 }

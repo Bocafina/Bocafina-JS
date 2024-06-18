@@ -7,8 +7,8 @@ const BackButtonMobile = (props) => {
   return (
     <>
       <Link to={props.to}>
-        <div className="back-button-mobile d-flex  m-1 p-1">
-          <img className="me-3" src={leftArrowIcon} alt="back button " />
+        <div className="back-button-mobile d-flex m-1 p-1">
+          <img className="me-3" src={leftArrowIcon} alt="back button" />
           <span className="text-secondary">{props.btnText}</span>
         </div>
       </Link>
