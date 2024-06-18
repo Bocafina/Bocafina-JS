@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import ThreeDotBtn from "./ThreeDotBtn/TreeDotBtn";
 import ProfilePic from "../ProfilePic/ProfilePic";
 
+import {addCookBookIcon} from "../../../assets/svg/icon/_icon.js";
+
 import "./recipesCardDisplay.scss";
 
 const RecipesCardDisplay = (props) => {
@@ -45,7 +47,7 @@ const RecipesCardDisplay = (props) => {
               <div className="recipes-card-section flex-between">
                 <h5 className="text-secondary">{props.recipeTitle}</h5>
                 <button>
-                  <img src="./src/assets/svg/addCookBookIcon.svg" alt="addCookBook" />
+                  <img src={addCookBookIcon} alt="addCookBook" />
                 </button>
               </div>
             </Card.Footer>

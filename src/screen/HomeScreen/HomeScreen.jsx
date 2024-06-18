@@ -1,13 +1,15 @@
 import { Image, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 import RecipesCardDisplay from "../../components/common/RecipesCardDisplay/RecipesCardDisplay";
 import "./homeScreen.scss";
 
 import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
+
 import Logo from "../../components/common/Logo/Logo";
 import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
+import {notificationIcon} from "../../assets/svg/icon/_icon.js";
+import recepieImgTest from "../../assets/img/imgTest.png";
 
 
 export default function HomeScreen() {

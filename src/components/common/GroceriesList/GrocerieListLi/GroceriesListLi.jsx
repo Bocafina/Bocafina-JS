@@ -33,11 +33,7 @@ const GroceriesListLi = (props) => {
     </ListGroup>
   ));
 
-  return (
-    <>
-      {listGoupItem}
-    </>
-  );
+  return <>{listGoupItem}</>;
 };
 
 export default GroceriesListLi;
