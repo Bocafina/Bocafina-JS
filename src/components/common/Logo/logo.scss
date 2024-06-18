@@ -7,9 +7,12 @@ height: 55px;
 .sizeHelloCat {
 width: 75px;
 }
-.row {
+.logoRow {
+  .row {
   flex-wrap: nowrap !important;
 }
+}
+
 
 // // media queries 
 @media (min-width: 768px) {

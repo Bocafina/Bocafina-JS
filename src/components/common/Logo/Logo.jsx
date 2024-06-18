@@ -5,7 +5,7 @@ import "./logo.scss";
 const Logo = () => {
 	return (
 		<>
-			<div className="bg-primary rounded-3">
+			<div className="bg-primary rounded-3 logoRow">
 				<Row>
 					<span className="text-secondary d-flex justify-content-end pe-2">
 						Bienvenue sur
