@@ -1,15 +1,19 @@
 .profilePicSize {
 	img {
-		width: 20vw;
+		width: 60px;
 	}
 }
+
+.d-UserName {
+			p {
+				display: none !important;
+			}
+		}
+
 //desktop
-@media (min-width: 769px){
-.profilePicSize {
-	margin-right: 0 !important;
-	img {
-		width: 10vw;
-		width: 110px;
+@media (min-width: 768px) {
+	.profilePicSize {
+		margin-right: 0 !important;
+		margin-top: 3rem !important;
 	}
-}
 }

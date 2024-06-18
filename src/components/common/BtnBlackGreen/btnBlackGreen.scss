@@ -1,10 +1,17 @@
 @import "../../../assets/styles/variables.scss";
 
 .btn-BG {
-  .btn.btn-primary {
-    font-size: 0.75rem !important;
-    --bs-btn-bg: none;
-    --bs-border-color: #{$tertiary};
-    background-color: black;
-  }
+	.btn.btn-primary {
+		font-size: 0.75rem;
+		--bs-btn-bg: none;
+		--bs-border-color: #{$tertiary};
+	}
+}
+
+@media (min-width: 768px) {
+	.btn-BG {
+		.btn.btn-primary {
+			font-size: 0.9rem;
+		}
+	}
 }

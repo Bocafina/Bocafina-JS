@@ -8,8 +8,12 @@
 }
 
 //taille de la main col
-.mainColSize {
-	flex-grow: 0.9 !important;
+// .mainColSize {
+// 	flex-grow: 0.9 !important;
+// }
+
+.screenSize {
+	min-height: 97vh;
 }
 
 @media (min-width: 768px) {
@@ -23,50 +27,38 @@
 			}
 		}
 	}
-
-	// image du chat
-	// ($top, $right, $bottom, $left)
-	.posWritingCat {
-		img {
-			height: 8vh;
-			@include absolute-el(50px, 5px, null, null);
-			z-index: 9999;
-		}
-	}
-
-	.greyBlock {
-		width: 25vw;
-		background-color: $primary;
-	}
 }
-@media (min-width: 992px) {
-	.posWritingCat {
-		img {
-			height: 8vh;
-		}
-	}
-}
-
 @media (min-width: 1200px) {
-	.greyBlock {
-		max-width: 350px !important;
-	}
 	.posBtn {
 		justify-content: center;
 	}
 }
 @media (min-width: 1400px) {
-	.posWritingCat {
-		img {
-			height: 8vh;
-			min-height: 90px;
-			@include absolute-el(40px, 5px, null, null);
+	.desktopSize {
+		.btn-connexion {
+			.btn-BG .btn.btn-primary {
+				font-size: 1rem !important;
+			}
+		}
+	}
+
+	.mainColSize {
+		h4 {
+			padding: 0 10px;
 		}
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1400px) {
-	.marginRightDiv {
-		margin-right: 20px !important;
+// scroll sur les cards
+.desktopSize {
+	.sizeScroll {
+		height: 450px;
 	}
+}
+@media (min-width: 1400px) {
+	.desktopSize {
+	.sizeScroll {
+		height: 500px;
+	}
+}
 }

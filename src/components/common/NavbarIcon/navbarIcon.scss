@@ -13,27 +13,32 @@
 	p {
 		color: white;
 		font-size: 0.7rem;
+		margin-bottom: 0;
 	}
 
 	img {
 		max-height: 4rem;
-	}
-	.isActive {
-		filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%)
-			hue-rotate(60deg) brightness(100%) contrast(92%);
 	}
 	.text-tertiary {
 		color: $tertiary;
 	}
 }
 
+.isActive {
+	filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%)
+		hue-rotate(60deg) brightness(100%) contrast(92%);
+}
+.text-tertiary {
+	color: $tertiary;
+}
+
 @media (min-width: 768px) {
 	.icon-wrapper {
 		width: 100%;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		img {
 			width: 25px;
-			margin-left: 20px;
+			margin: 0 20px;
 		}
 		p {
 			margin-bottom: 0;

@@ -1,92 +1,83 @@
 @import "../../../assets/styles/_mixins.scss";
 @import "../../../assets/styles/_variables.scss";
 
-.wrapper {
-	background-color: $primary;
-	color: $secondary;
-	width: 54vw;
-	min-height: 80px;
-
-	.sizeWelcome {
-		font-size: 4vw;
-	}
-	.sizeLogo {
-		img {
-			width: 34vw;
-		}
-	}
-	.sizeHelloCat {
-		img {
-			height: 17vw;
-			@include absolute-el(null, -10%, -10%, null);
-		}
-		// mixins example ($top, $right, $bottom, $left)
-	}
+.sizeLogo {
+height: 55px;
+}
+.sizeHelloCat {
+width: 75px;
+}
+.logoRow {
+  .row {
+  flex-wrap: nowrap !important;
+}
 }
 
-// media queries logo
-//phone
-@media (min-width: 260px) and (max-width: 360px) {
-	.wrapper {
-		min-height: 60px;
-	}
-	.sizeLogo {
-		margin-bottom: 1px;
-	}
+
+// // media queries 
+@media (min-width: 768px) {
+.sizeLogo {
+height: 60px;
 }
-//desktop
-@media (min-width: 768px) and (max-width: 1200px) {
-	.wrapper {
-		width: 22vw;
-		max-width: 350px;
-		.sizeWelcome {
-			font-size: 1.6vw;
-		}
-		.sizeLogo {
-			img {
-				width: 16vw;
-				max-width: 250px;
-			}
-		}
-		.sizeHelloCat {
-			img {
-				height: 8vw;
-				max-height: 110px;
-				@include absolute-el(30%, -25%, null, null);
-			}
-		}
-	}
+.sizeHelloCat {
+width: 80px;
 }
-//large desktop
-@media (min-width: 1201px) {
-	.wrapper {
-		width: 22vw;
-		max-width: 300px;
-		.sizeWelcome {
-			font-size: 19px;
-		}
-		.sizeLogo {
-			img {
-				width: 16vw;
-				max-width: 250px;
-			}
-		}
-		.sizeHelloCat {
-			img {
-				height: 8vw;
-				max-height: 110px;
-				@include absolute-el(30%, -25%, null, null);
-			}
-		}
-	}
+
 }
-//extra large desktop
-@media (min-width: 1401px) {
-	.wrapper {
-		.sizeLogo {
-			img {
-				max-width: 220px;
-			}
-		}
-	}
-}
+
+// //desktop
+// @media (min-width: 768px) and (max-width: 1200px) {
+// 	.wrapper {
+// 		width: 22vw;
+// 		max-width: 350px;
+// 		.sizeWelcome {
+// 			font-size: 1.6vw;
+// 		}
+// 		.sizeLogo {
+// 			img {
+// 				width: 16vw;
+// 				max-width: 250px;
+// 			}
+// 		}
+// 		.sizeHelloCat {
+// 			img {
+// 				height: 8vw;
+// 				max-height: 110px;
+// 				@include absolute-el(30%, -25%, null, null);
+// 			}
+// 		}
+// 	}
+// }
+// //large desktop
+// @media (min-width: 1201px) {
+// 	.wrapper {
+// 		width: 22vw;
+// 		max-width: 300px;
+// 		.sizeWelcome {
+// 			font-size: 19px;
+// 		}
+// 		.sizeLogo {
+// 			img {
+// 				width: 16vw;
+// 				max-width: 250px;
+// 			}
+// 		}
+// 		.sizeHelloCat {
+// 			img {
+// 				height: 8vw;
+// 				max-height: 110px;
+// 				@include absolute-el(30%, -25%, null, null);
+// 			}
+// 		}
+// 	}
+// }
+// //extra large desktop
+// @media (min-width: 1401px) {
+// 	.wrapper {
+// 		.sizeLogo {
+// 			img {
+// 				max-width: 220px;
+// 			}
+// 		}
+// 	}
+// }
