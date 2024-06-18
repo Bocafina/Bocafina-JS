@@ -5,7 +5,7 @@ import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
 
 import "./loginScreenView.scss";
 import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMoblie from "../../components/mobile/BackButton/BackButtonMobilel";
+import BackButtonMobile from "../../components/mobile/BackButton/BackButtonMobile";
 
 
 const userUUID = "catUserUUID";
@@ -13,7 +13,7 @@ const userUUID = "catUserUUID";
 const LoginScreenView = () => {
   return (
 		<>
-			<BackButtonMoblie to="/" btnText="Login" />
+			<BackButtonMobile to="/" btnText="Login" />
 			{/* header page */}
 			<div className="flex-between mb-4">
 				<div className="flex-between ms-2 mt-3">

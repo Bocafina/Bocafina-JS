@@ -2,13 +2,13 @@ import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
 
 import "./CreateAccountScreenView.scss";
 import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMoblie from "../../components/mobile/BackButton/BackButtonMobilel";
+import BackButtonMobile from "../../components/mobile/BackButton/BackButtonMobile";
 
 const CreateAccountScreenView = (props) => {
   return (
     <>
       <header>
-        <BackButtonMoblie to="/profiles/login" btnText="Créer un profil" />
+        <BackButtonMobile to="/profiles/login" btnText="Créer un profil" />
         <div className="d-flex justify-content-center m-4">
           <ProfilePic profilePicSrc="profilepiccat.png" />
         </div>

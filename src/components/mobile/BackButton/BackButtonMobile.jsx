@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./BackButtonMobile.scss";
 import leftArrow from "../../../assets/svg/leftarrowicon.svg";
 
-const BackButtonMoblie = (props) => {
+const BackButtonMobile = (props) => {
   return (
     <>
       <Link to={props.to}>
@@ -16,4 +16,4 @@ const BackButtonMoblie = (props) => {
   );
 };
 
-export default BackButtonMoblie;
+export default BackButtonMobile;
