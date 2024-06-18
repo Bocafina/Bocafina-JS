@@ -1,6 +1,8 @@
 import { Image } from "react-bootstrap";
+import { rightArrowIcon } from "../../../../assets/svg/icon/_icon";
 
 import ListGroup from "react-bootstrap/ListGroup";
+
 
 import "./listBtn.scss";
 
@@ -12,7 +14,7 @@ const ListBtn = (props) => {
 					<span>{props.dayName}</span>
 					<Image
 						className=""
-						src="../../src/assets/svg/rightarrowicon.svg"
+						src={rightArrowIcon}
 						alt="Icone flèche vers la droite"
 					/>
 				</div>
