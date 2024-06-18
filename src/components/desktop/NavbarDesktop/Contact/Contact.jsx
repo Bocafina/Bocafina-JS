@@ -1,7 +1,7 @@
 import { Image } from "react-bootstrap";
 
 
-import "./contact.css";
+import "./contact.scss";
 
 const Contact = () => {
 	return (

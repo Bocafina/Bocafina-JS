@@ -8,10 +8,19 @@
 	}
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 768px) and (max-width:992px){
 	.btn-BG {
 		.btn.btn-primary {
-			font-size: 0.9rem;
+			font-size: 0.7rem;
+		}
+	}
+}
+@media (min-width: 993px){
+		.btn-BG {
+		.btn.btn-primary {
+			font-size: 0.8rem;
 		}
 	}
 }

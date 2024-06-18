@@ -8,6 +8,7 @@ import "./homeScreen.scss";
 import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
 import Logo from "../../components/common/Logo/Logo";
 import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
+import Header from "../../components/desktop/Header/Header";
 
 export default function HomeScreen() {
 
@@ -51,7 +52,9 @@ export default function HomeScreen() {
 			</div>
 
 			{/* écrans dekstop */}
-			<h1 className="d-none d-md-block">main content</h1>
+			<div className="d-none d-md-block">
+			<Header />
+			</div>
 		</>
 	);
 }

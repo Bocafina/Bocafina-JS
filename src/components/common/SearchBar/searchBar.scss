@@ -7,3 +7,11 @@
 input.bg-primary.form-control {
 	border: none !important;
 }
+
+@media (min-width: 768px) {
+	.sizeSearchBar {
+				img {
+					width: 18px !important;
+				}
+	}
+}
