@@ -13,6 +13,7 @@ import ProfileScreen from "./screen/ProfileScreen";
 import LoginScreen from "./screen/LoginScreen/LoginScreen";
 import CreateAccountScreen from "./screen/CreateAccountScreen/CreateAccountScreen";
 import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
+import Header from "./components/desktop/Header/Header";
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 			<Container fluid className="app-container d-flex g-0">
 				<NavbarDesktop />
 				<div className="d-flex flex-column flex-grow-1">
-					{/* <HeaderCat /> */}
+					<Header />
 					<main>
 						<Routes>
 							<Route path="/" element={<HomeScreen />} />
