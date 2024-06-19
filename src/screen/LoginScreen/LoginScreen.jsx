@@ -1,13 +1,14 @@
 import LoginScreenView from "./LoginScreenView";
+import profileImg from "/profilepiccat.png";
 
 const LoginScreen = () => {
-	return (
-		<>
-			<div className="container-fluid">
-				<LoginScreenView />
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="container-fluid">
+        <LoginScreenView profileImg={profileImg} />
+      </div>
+    </>
+  );
 };
 
 export default LoginScreen;

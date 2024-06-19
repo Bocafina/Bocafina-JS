@@ -3,16 +3,16 @@ import { Row } from "react-bootstrap";
 import "./cookBookCardDisplay.scss";
 
 import RecipesCardDisplay from "../RecipesCardDisplay/RecipesCardDisplay";
-import { cookBookScreenReicipesData } from "../../../data/cookbookScreenRecipesData";
 
-const CookBookCardDisplay = () => {
-  const cookBookRecipies = cookBookScreenReicipesData.map((recipes) => (
+
+const CookBookCardDisplay = (props) => {
+  const cookBookRecipies = props.recipies.map((recipes) => (
     <RecipesCardDisplay
       className="col-6"
       shadow="shadow-card"
       key={recipes.id}
       hasHeader={false}
-      // imageSrc={recipes.imageSrc}
+      imageSrc={recipes.imageSrc}
       profilName={recipes.profilName}
       recipeTitle={recipes.recipeTitle}
     />

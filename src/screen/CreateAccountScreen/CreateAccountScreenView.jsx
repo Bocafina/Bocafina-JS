@@ -10,7 +10,7 @@ const CreateAccountScreenView = (props) => {
       <header>
         <BackButtonMobile to="/profiles/login" btnText="Créer un profil" />
         <div className="d-flex justify-content-center m-4">
-          <ProfilePic profilePicSrc="profilepiccat.png" />
+          <ProfilePic profilePicSrc={props.profileImg} />
         </div>
       </header>
 
@@ -26,7 +26,10 @@ const CreateAccountScreenView = (props) => {
             id="userName"
             placeholder={props.userUUID}
           />
-          <span className="ms-3"> <small>Il sera affiché sur votre profil et vos recettes.</small></span>
+          <span className="ms-3">
+            {" "}
+            <small>Il sera affiché sur votre profil et vos recettes.</small>
+          </span>
 
           <div></div>
         </div>
@@ -62,7 +65,10 @@ const CreateAccountScreenView = (props) => {
             name="password-verification-CA"
             id="password-verification-CA"
           />
-          <span className="ms-3"> <small>champs obligatoires *</small></span>
+          <span className="ms-3">
+            {" "}
+            <small>champs obligatoires *</small>
+          </span>
         </div>
 
         <div className="d-flex justify-content-center w-100">

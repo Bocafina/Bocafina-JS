@@ -1,10 +1,11 @@
 import CreateAccountScreenView from "./CreateAccountScreenView";
+import profileImg from "/profilepiccat.png";
 
 const CreateAccountScreen = () => {
   return (
     <>
       <div className="container-fluid">
-        <CreateAccountScreenView userUUID="CatUserUUID" />
+        <CreateAccountScreenView profileImg={profileImg} userUUID="CatUserUUID" />
       </div>
     </>
   );

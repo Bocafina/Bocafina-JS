@@ -11,7 +11,7 @@ const NavbarMobile = () => {
 					<NavbarIcon icon="home" name="Acceuil" to="/" />
 					<NavbarIcon icon="search" name="Recherche" to="/search" />
 					<NavbarIcon icon="cookbook" name="CookBook" to="/cookbook" />
-					<NavbarIcon icon="menus" name="Planner" to="/menus" />
+					<NavbarIcon icon="menus" name="Planner" to="/planner" />
 					<NavbarIcon icon="groceries" name="Courses" to="/groceries" />
 				</Nav>
 			</div>
