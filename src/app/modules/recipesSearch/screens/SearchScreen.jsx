@@ -1,4 +1,4 @@
-import SearchScreenView from "./SearchScreenView";
+import SearchScreenView from "./SearchScreenView.jsx";
 
 import { searchScreenRecipeData } from "../../../../data/searchScreenRecipeData.js";
 
