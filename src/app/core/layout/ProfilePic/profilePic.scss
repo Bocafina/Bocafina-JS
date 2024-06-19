@@ -4,11 +4,12 @@
 	}
 }
 
-// .d-UserName {
-// 			p {
-// 				display: none !important;
-// 			}
-// 		}
+//nom caché en desktop car pb sur mobile v.
+.d-UserName {
+	p {
+		display: none !important;
+	}
+}
 
 //desktop
 @media (min-width: 768px) {
@@ -16,4 +17,10 @@
 		margin-right: 0 !important;
 		margin-top: 3rem !important;
 	}
+	.d-UserName {
+	p {
+		display: inline !important;
+	}
 }
+}
+

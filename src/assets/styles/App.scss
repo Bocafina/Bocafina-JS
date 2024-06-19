@@ -25,14 +25,13 @@ body {
 	font-family: "Lato-Regular", sans-serif;
 }
 
-aside {
-	width: 250px;
-}
+
 
 .app-container {
 	padding: 0.6em;
 	min-height: 100vh;
 }
+
 
 .row {
 	--bs-gutter-x: 0 !important;
@@ -64,3 +63,14 @@ h5 {
 // 	padding-bottom: 6.5rem;
 // }
 // }
+
+@media (min-width: 768px) {
+	aside {
+	width: 250px;
+	min-height: 98vh;
+}
+.app-header, .app-content {
+	margin-left: 260px;
+	width: calc(100% - 260px);
+}
+}
