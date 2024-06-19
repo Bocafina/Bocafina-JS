@@ -18,7 +18,7 @@ const NavbarDesktop = () => {
           <div className="d-flex flex-column">
             <Logo />
             <ProfilePic profilePicSrc="profilepiccat.png" />
-            <BtnBlackGreen btnName="modifier le profil" />
+            <BtnBlackGreen btnName="se connecter" />
             <hr className="text-secondary mx-3 border border-1" />
 
             <Nav className="gap-4 my-5">
