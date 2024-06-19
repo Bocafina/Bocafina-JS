@@ -2,8 +2,8 @@ import { Image, Row, Col } from "react-bootstrap";
 
 import "./header.scss";
 
-import SearchBarDesktop from "../SearchBarDesktop/SearchBarDesktop";
-import BtnBlackGreen from "../../common/BtnBlackGreen/BtnBlackGreen";
+import SearchBarDesktop from "../../../../../components/desktop/SearchBarDesktop/SearchBarDesktop";
+import BtnBlackGreen from "../../../../shared/components/BtnBlackGreen/BtnBlackGreen";
 
 const Header = () => {
   return (

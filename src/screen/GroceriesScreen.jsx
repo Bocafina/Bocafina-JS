@@ -1,5 +1,5 @@
 import GroceriesList from "../components/common/GroceriesList/GroceriesList";
-import BtnBlackGreen from "../components/common/BtnBlackGreen/BtnBlackGreen";
+import BtnBlackGreen from "../app/shared/components/BtnBlackGreen/BtnBlackGreen";
 
 export default function GroceriesScreen() {
   return (

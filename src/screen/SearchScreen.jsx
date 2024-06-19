@@ -1,4 +1,4 @@
-import RecipesCardDisplay from "../components/common/RecipesCardDisplay/RecipesCardDisplay";
+import RecipesCardDisplay from "../app/shared/components/RecipesCardDisplay/RecipesCardDisplay";
 import RecipesFiltersBar from "../components/common/RecipesFiltersBar/RecipesFiltersBar";
 import SearchBar from "../components/common/SearchBar/SearchBar";
 

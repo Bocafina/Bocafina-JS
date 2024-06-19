@@ -1,5 +1,5 @@
 import "./threeDotBtn.scss";
-import { threeDotBtnIcon } from "../../../../assets/svg/icon/_icon.js";
+import { threeDotBtnIcon } from "../../../../assets/svg/icon/_icon";
 
 const ThreeDotBtn = () => {
   return (

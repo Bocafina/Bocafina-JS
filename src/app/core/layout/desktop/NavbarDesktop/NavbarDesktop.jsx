@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 import "./navbarDesktop.scss";
 
-import NavbarIcon from "../../common/NavbarIcon/NavbarIcon";
-import Logo from "../../common/Logo/Logo";
-import ProfilePic from "../../common/ProfilePic/ProfilePic";
-import Contact from "./Contact/Contact";
-import BtnBlackGreen from "../../common/BtnBlackGreen/BtnBlackGreen";
-import SocialMedias from "./SocialMedias/SocialMedias";
+import NavbarIcon from "../../../../../components/common/NavbarIcon/NavbarIcon";
+import Logo from "../../../../../components/common/Logo/Logo";
+import ProfilePic from "../../../../../components/common/ProfilePic/ProfilePic";
+import Contact from "../Contact/Contact";
+import BtnBlackGreen from "../../../../shared/components/BtnBlackGreen/BtnBlackGreen";
+import SocialMedias from "../SocialMedias/SocialMedias";
 
 const NavbarDesktop = () => {
   return (

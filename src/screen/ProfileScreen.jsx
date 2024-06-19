@@ -1,4 +1,4 @@
-import NavbarMobile from "../components/mobile/NavbarMobile/NavbarMobile";
+import NavbarMobile from "../app/core/layout/NavbarMobile/NavbarMobile";
 
 const ProfileScreen = () => {
   console.log("je suis la");

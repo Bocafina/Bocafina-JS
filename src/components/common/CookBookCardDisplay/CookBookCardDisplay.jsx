@@ -2,7 +2,7 @@ import { Row } from "react-bootstrap";
 
 import "./cookBookCardDisplay.scss";
 
-import RecipesCardDisplay from "../RecipesCardDisplay/RecipesCardDisplay";
+import RecipesCardDisplay from "../../../app/shared/components/RecipesCardDisplay/RecipesCardDisplay";
 
 
 const CookBookCardDisplay = (props) => {

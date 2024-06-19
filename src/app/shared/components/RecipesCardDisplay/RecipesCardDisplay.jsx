@@ -1,10 +1,10 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import ThreeDotBtn from "./ThreeDotBtn/TreeDotBtn";
-import ProfilePic from "../ProfilePic/ProfilePic";
+import ThreeDotBtn from "../ThreeDotBtn/ThreeDotBtn";
+import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic";
 
-import {addCookBookIcon} from "../../../assets/svg/icon/_icon.js";
+import { addCookBookIcon } from "../../../../assets/svg/icon/_icon";
 
 import "./recipesCardDisplay.scss";
 

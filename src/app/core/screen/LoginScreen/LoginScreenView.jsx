@@ -1,15 +1,14 @@
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
-import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMobile from "../../components/mobile/BackButton/BackButtonMobile";
+import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic";
+import BtnBlackGreen from "../../../shared/components/BtnBlackGreen/BtnBlackGreen";
+import BackButtonMobile from "../../../../components/mobile/BackButton/BackButtonMobile";
 
-import { settingsIcon } from "../../assets/svg/icon/_icon";
-import scratchGray from "/scratch-gray.png"; 
+import { settingsIcon } from "../../../../assets/svg/icon/_icon";
+import scratchGray from "/scratch-gray.png";
 
 import "./loginScreenView.scss";
-
 
 const userUUID = "catUserUUID";
 

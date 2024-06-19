@@ -1,18 +1,15 @@
 import { Image, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import RecipesCardDisplay from "../../components/common/RecipesCardDisplay/RecipesCardDisplay";
+import RecipesCardDisplay from "../../../shared/components/RecipesCardDisplay/RecipesCardDisplay";
+import Logo from "../../../../components/common/Logo/Logo.jsx";
+import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic.jsx";
+import { notificationIcon } from "../../../../assets/svg/icon/_icon.js";
+
 import "./homeScreen.scss";
 
-import { homeScreenRecipesData } from "../../data/homeScreenRecipesData";
-
-import Logo from "../../components/common/Logo/Logo";
-import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
-import { notificationIcon } from "../../assets/svg/icon/_icon.js";
-
-
-export default function HomeScreen() {
-  let homeScreenRecipes = homeScreenRecipesData;
+export default function HomeScreenView(props) {
+  let homeScreenRecipes = props.recipies;
 
   const RecipesList = homeScreenRecipes.map((recipes) => (
     <Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} key={recipes.id}>

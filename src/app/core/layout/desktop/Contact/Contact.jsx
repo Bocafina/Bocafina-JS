@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import { contactIcon } from "../../../../assets/svg/icon/_icon";
+import { contactIcon } from "../../../../../assets/svg/icon/_icon";
 
 import "./contact.scss";
 

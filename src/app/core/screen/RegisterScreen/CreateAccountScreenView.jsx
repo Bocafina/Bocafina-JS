@@ -1,8 +1,8 @@
-import ProfilePic from "../../components/common/ProfilePic/ProfilePic";
+import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic";
 
 import "./CreateAccountScreenView.scss";
-import BtnBlackGreen from "../../components/common/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMobile from "../../components/mobile/BackButton/BackButtonMobile";
+import BtnBlackGreen from "../../../shared/components/BtnBlackGreen/BtnBlackGreen";
+import BackButtonMobile from "../../../../components/mobile/BackButton/BackButtonMobile";
 
 const CreateAccountScreenView = (props) => {
   return (

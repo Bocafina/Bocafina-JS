@@ -1,19 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-import HomeScreen from "./screen/HomeScreen/HomeScreen";
-import SearchScreen from "./screen/SearchScreen";
-import CookBookScreen from "./screen/CookBookScreen";
-import MenusScreen from "./screen/MenusScreen/MenusScreen";
-import GroceriesScreen from "./screen/GroceriesScreen";
-import RecipesScreen from "./screen/RecipesScreen";
-import PageNotFound from "./screen/PageNotFound";
-import NavbarDesktop from "./components/desktop/NavbarDesktop/NavbarDesktop";
-import ProfileScreen from "./screen/ProfileScreen";
+import HomeScreen from "../features/recipesFeed/screens/HomeScreen";
+import SearchScreen from "../../screen/SearchScreen";
+import CookBookScreen from "../../screen/CookBookScreen";
+import MenusScreen from "../../screen/MenusScreen/MenusScreen";
+import GroceriesScreen from "../../screen/GroceriesScreen";
+import RecipesScreen from "../../screen/RecipesScreen";
+import PageNotFound from "../../screen/PageNotFound";
+import NavbarDesktop from "./layout/desktop/NavbarDesktop/NavbarDesktop";
+import ProfileScreen from "../../screen/ProfileScreen";
 import LoginScreen from "./screen/LoginScreen/LoginScreen";
-import CreateAccountScreen from "./screen/CreateAccountScreen/CreateAccountScreen";
-import NavbarMobile from "./components/mobile/NavbarMobile/NavbarMobile";
-import Header from "./components/desktop/Header/Header";
+import CreateAccountScreen from "./screen/RegisterScreen/CreateAccountScreen";
+import NavbarMobile from "./layout/NavbarMobile/NavbarMobile";
+import Header from "./layout/desktop/Header/Header";
 
 function App() {
   return (
