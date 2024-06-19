@@ -11,13 +11,15 @@ import BtnBlackGreen from "../../../../shared/components/BtnBlackGreen/BtnBlackG
 import SocialMedias from "../SocialMedias/SocialMedias";
 
 const NavbarDesktop = () => {
-  return (
+	return (
 		<>
 			<aside className="navbar-desktop bg-primary me-2 p-1 rounded-3 position-fixed d-none d-md-block">
 				<div className="d-flex flex-column justify-content-between h-100">
 					<div className="d-flex flex-column ">
 						<Logo />
-						<ProfilePic profilePicSrc="profilepiccat.png" />
+						<div className="navbarProfilePicSize">
+							<ProfilePic profilePicSrc="profilepiccat.png" />
+						</div>
 						<Link to="/profiles/login">
 							<BtnBlackGreen btnName="se connecter" />
 						</Link>

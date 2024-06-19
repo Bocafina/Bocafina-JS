@@ -14,21 +14,23 @@ const RecipesCardDisplay = (props) => {
 
   if (hasHeader) {
     header = (
-      <>
-        <Card.Header className="bg-primary">
-          <div className="recipes-card-section flex-between">
-            <div className="d-flex align-items-center">
-              <ProfilePic profilePicSrc="profilepiccat.png" />
-              <h5 className="text-secondary ms-2">{props.profilName}</h5>
-            </div>
+			<>
+				<Card.Header className="bg-primary">
+					<div className="recipes-card-section flex-between">
+						<div className="d-flex align-items-center">
+							<ProfilePic profilePicSrc="profilepiccat.png" />
+							<h5 className="text-secondary ms-2 d-UserName">
+								{props.profilName}
+							</h5>
+						</div>
 
-            <ThreeDotBtn />
-          </div>
-        </Card.Header>
+						<ThreeDotBtn />
+					</div>
+				</Card.Header>
 
-        <Card.Img className="rounded-0" variant="top" src={props.imageSrc} />
-      </>
-    );
+				<Card.Img className="rounded-0" variant="top" src={props.imageSrc} />
+			</>
+		);
   } else {
     header = (
       <>

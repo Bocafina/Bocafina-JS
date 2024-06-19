@@ -1,13 +1,19 @@
 @import "../../../../../assets/styles/variables.scss";
 
 .navbar-desktop {
-  .isActive {
-    filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%) hue-rotate(60deg) brightness(100%)
-      contrast(92%);
-  }
-  .text-tertiary {
-    color: $tertiary;
-  }
-  height: 98vh;
+	.isActive {
+		filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%)
+			hue-rotate(60deg) brightness(100%) contrast(92%);
+	}
+	.text-tertiary {
+		color: $tertiary;
+	}
+	height: 98vh;
 }
 
+@media (min-width: 768px) {
+	.navbarProfilePicSize {
+		margin-right: 0;
+		margin-top: 3rem;
+	}
+}
