@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-import HomeScreen from "../features/recipesFeed/screens/HomeScreen";
-import SearchScreen from "../features/recipesSearch/screens/SearchScreen";
-import CookBookScreen from "../../screen/CookBookScreen";
-import MenusScreen from "../../screen/MenusScreen/MenusScreen";
+import HomeScreen from "../modules/recipesFeed/screens/HomeScreen";
+import SearchScreen from "../modules/recipesSearch/screens/SearchScreen";
+import CookBookScreen from "../modules/cookBook/screens/CookBookScreen";
+import MenusScreen from "../modules/planner/screens/MenusScreen";
 import GroceriesScreen from "../../screen/GroceriesScreen";
 import RecipesScreen from "../../screen/RecipesScreen";
 import PageNotFound from "../../screen/PageNotFound";
