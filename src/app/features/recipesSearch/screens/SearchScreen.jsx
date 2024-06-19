@@ -1,8 +1,8 @@
-import RecipesCardDisplay from "../app/shared/components/RecipesCardDisplay/RecipesCardDisplay";
-import RecipesFiltersBar from "../components/common/RecipesFiltersBar/RecipesFiltersBar";
-import SearchBar from "../components/common/SearchBar/SearchBar";
+import RecipesCardDisplay from "../../../shared/components/RecipesCardDisplay/RecipesCardDisplay";
+import RecipesFiltersBar from "../../../../components/common/RecipesFiltersBar/RecipesFiltersBar";
+import SearchBar from "../../../../components/common/SearchBar/SearchBar";
 
-import { searchScreenRecipeData } from "../data/searchScreenRecipeData";
+import { searchScreenRecipeData } from "../../../../data/searchScreenRecipeData";
 
 export default function SearchScreen() {
   let searchScreenRecipes = searchScreenRecipeData;
