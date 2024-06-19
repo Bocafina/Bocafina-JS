@@ -8,13 +8,13 @@ export default function SearchScreen() {
   let searchScreenRecipes = searchScreenRecipeData;
 
   const recipesList = searchScreenRecipes.map((recipes) => (
-      <RecipesCardDisplay
-        key={recipes.id}
-        hasHeader={false}
-        imageSrc={recipes.imageSrc}
-        profilName={recipes.profilName}
-        recipeTitle={recipes.recipeTitle}
-      />
+    <RecipesCardDisplay
+      key={recipes.id}
+      hasHeader={false}
+      imageSrc={recipes.imageSrc}
+      profilName={recipes.profilName}
+      recipeTitle={recipes.recipeTitle}
+    />
   ));
 
   return (
@@ -28,4 +28,4 @@ export default function SearchScreen() {
   );
 }
 
-// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici 
+// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
