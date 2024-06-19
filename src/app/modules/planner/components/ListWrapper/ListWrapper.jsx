@@ -1,6 +1,6 @@
 import "./listWrapper.scss";
 
-import ListBtn from "./ListBtn/ListBtn";
+import ListBtn from "../ListBtn/ListBtn";
 import ListGroup from "react-bootstrap/ListGroup";
 
 const ListWrapper = () => {

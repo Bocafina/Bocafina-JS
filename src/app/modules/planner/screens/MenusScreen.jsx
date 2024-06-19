@@ -1,5 +1,5 @@
-import DateNavigator from "../../components/common/DateNavigator/DateNavigator";
-import ListWrapper from "../../components/mobile/ListWrapper/ListWrapper";
+import DateNavigator from "../../../../components/common/DateNavigator/DateNavigator";
+import ListWrapper from "../components/ListWrapper/ListWrapper";
 
 import "./menusScreen.scss";
 

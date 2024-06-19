@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import { rightArrowIcon } from "../../../../assets/svg/icon/_icon";
+import { rightArrowIcon } from "../../../../../assets/svg/icon/_icon";
 
 import ListGroup from "react-bootstrap/ListGroup";
 
