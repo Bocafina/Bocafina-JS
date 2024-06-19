@@ -6,7 +6,7 @@ import ProfilePic from "../../../core/layout/ProfilePic/ProfilePic";
 
 import { addCookBookIcon } from "../../../../assets/svg/icon/_icon";
 
-import "./recipesCardDisplay.scss";
+import "./recipeCard.scss";
 
 const RecipesCardDisplay = (props) => {
   const hasHeader = props.isHomeScreen;

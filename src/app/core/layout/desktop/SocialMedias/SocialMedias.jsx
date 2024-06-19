@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import * as icons from "../../../../../assets/svg/icon/_socialMedia.js";
 
+
 import "./socialMedias.scss";
+import thatWay from "/thatway.png"
 
 const SocialMedias = () => {
   return (
@@ -36,7 +38,7 @@ const SocialMedias = () => {
         </div>
         <Image
           className="sizeCatArrow"
-          src="../../src/assets/img/thatway.png"
+          src={thatWay}
           alt="Chat qui montre les réseaux sociaux"
         />
       </div>
