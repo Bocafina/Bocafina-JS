@@ -13,7 +13,7 @@ function App() {
         <div className="d-flex flex-column flex-grow-1">
           <Header />
           <main>
-           <Routing/>
+            <Routing />
           </main>
         </div>
       </Container>
