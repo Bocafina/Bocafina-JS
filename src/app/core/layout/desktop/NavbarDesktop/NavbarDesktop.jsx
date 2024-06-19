@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./navbarDesktop.scss";
 
 import NavbarIcon from "../../NavbarIcon/NavbarIcon";
-import Logo from "../../Logo/Logo";
+import Logo from "../../../../modules/recipesFeed/components/Logo/Logo";
 import ProfilePic from "../../ProfilePic/ProfilePic";
 import Contact from "../Contact/Contact";
 import BtnBlackGreen from "../../../../shared/components/BtnBlackGreen/BtnBlackGreen";
