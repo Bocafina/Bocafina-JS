@@ -1,29 +1,13 @@
-import RecipesCardDisplay from "../../../shared/components/RecipesCardDisplay/RecipesCardDisplay";
-import RecipesFiltersBar from "../../../../components/common/RecipesFiltersBar/RecipesFiltersBar";
-import SearchBar from "../../../../components/common/SearchBar/SearchBar";
+import SearchScreenView from "./SearchScreenView";
 
-import { searchScreenRecipeData } from "../../../../data/searchScreenRecipeData";
+import { searchScreenRecipeData } from "../../../../data/searchScreenRecipeData.js";
 
 export default function SearchScreen() {
-  let searchScreenRecipes = searchScreenRecipeData;
-
-  const recipesList = searchScreenRecipes.map((recipes) => (
-    <RecipesCardDisplay
-      key={recipes.id}
-      hasHeader={false}
-      imageSrc={recipes.imageSrc}
-      profilName={recipes.profilName}
-      recipeTitle={recipes.recipeTitle}
-    />
-  ));
+  let Recipes = searchScreenRecipeData;
 
   return (
     <>
-      <div className="">
-        <SearchBar />
-        <RecipesFiltersBar />
-        <section>{recipesList}</section>
-      </div>
+      <SearchScreenView Recipes={Recipes} />
     </>
   );
 }

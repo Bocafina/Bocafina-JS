@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 import HomeScreen from "../features/recipesFeed/screens/HomeScreen";
-import SearchScreen from "../../screen/SearchScreen";
+import SearchScreen from "../features/recipesSearch/screens/SearchScreen";
 import CookBookScreen from "../../screen/CookBookScreen";
 import MenusScreen from "../../screen/MenusScreen/MenusScreen";
 import GroceriesScreen from "../../screen/GroceriesScreen";

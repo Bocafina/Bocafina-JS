@@ -1,0 +1,17 @@
+::placeholder {
+  color: #a69e9e !important;
+  font-family: "Lato-regular";
+  font-size: 0.9rem;
+}
+
+input.bg-primary.form-control {
+  border: none !important;
+}
+
+@media (min-width: 768px) {
+  .sizeSearchBar {
+    img {
+      width: 18px !important;
+    }
+  }
+}
