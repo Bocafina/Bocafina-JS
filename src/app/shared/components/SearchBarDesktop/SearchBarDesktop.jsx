@@ -1,5 +1,5 @@
 import { Form, InputGroup } from "react-bootstrap";
-import { searchIcon } from "../../../assets/svg/icon/_navbarIcon";
+import { searchIcon } from "../../../../assets/svg/icon/_navbarIcon";
 
 import "./searchBarDesktop.scss";
 

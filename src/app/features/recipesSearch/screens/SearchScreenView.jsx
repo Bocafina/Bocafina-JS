@@ -1,8 +1,6 @@
 import RecipesCardDisplay from "../../../shared/components/RecipesCardDisplay/RecipesCardDisplay";
 import RecipesFiltersBar from "../../../shared/components/RecipesFiltersBar/RecipesFiltersBar";
-import SearchBar from "../../../shared/components/SearchBar/SearchBar";
-
-
+import SearchBar from "../../../shared/components/SearchBarMobile/SearchBarMobile";
 
 export default function SearchScreenView(props) {
   let searchScreenRecipes = props.Recipes;

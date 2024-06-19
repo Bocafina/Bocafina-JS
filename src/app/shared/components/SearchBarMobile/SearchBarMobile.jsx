@@ -1,9 +1,9 @@
 import { searchIcon } from "../../../../assets/svg/icon/_navbarIcon";
 import { Form, InputGroup } from "react-bootstrap";
 
-import "./searchBar.scss";
+import "./searchBarMobile.scss";
 
-const SearchBar = () => {
+const SearchBarMobile = () => {
   return (
     <>
       <div className="mt-2 mb-3">
@@ -22,4 +22,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default SearchBarMobile;

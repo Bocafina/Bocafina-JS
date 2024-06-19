@@ -1,4 +1,4 @@
-import SearchBar from "../app/shared/components/SearchBar/SearchBar";
+import SearchBar from "../app/shared/components/SearchBarMobile/SearchBarMobile";
 import RecipesFiltersBar from "../app/shared/components/RecipesFiltersBar/RecipesFiltersBar";
 import CookBookCardDisplay from "../components/common/CookBookCardDisplay/CookBookCardDisplay";
 import BtnBlackGreen from "../app/shared/components/BtnBlackGreen/BtnBlackGreen";
