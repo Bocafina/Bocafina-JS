@@ -1,0 +1,8 @@
+@import "../../../../../assets/styles/variables.scss";
+
+.listGroupColor {
+  .list-group {
+	// interpolation (#{}) nécessaire ici car variable
+	--bs-list-group-border-color: #{$secondary} !important;
+}
+}

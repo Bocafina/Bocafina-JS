@@ -1,8 +1,0 @@
-@import "../../../assets/styles/variables";
-
-.listGroupColor {
-  .list-group {
-	// interpolation (#{}) nécessaire ici car variable
-	--bs-list-group-border-color: #{$secondary} !important;
-}
-}

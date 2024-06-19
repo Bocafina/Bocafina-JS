@@ -1,0 +1,26 @@
+@import "../../../../assets/styles/variables";
+
+.btn-BG {
+	.btn.btn-primary {
+		font-size: 0.75rem;
+		--bs-btn-bg: none;
+		--bs-border-color: #{$tertiary};
+	}
+}
+
+
+
+@media (min-width: 768px) and (max-width:992px){
+	.btn-BG {
+		.btn.btn-primary {
+			font-size: 0.7rem;
+		}
+	}
+}
+@media (min-width: 993px){
+		.btn-BG {
+		.btn.btn-primary {
+			font-size: 0.8rem;
+		}
+	}
+}

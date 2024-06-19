@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/variables.scss";
+
+.navbar-desktop {
+  .isActive {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(23%) saturate(1256%) hue-rotate(60deg) brightness(100%)
+      contrast(92%);
+  }
+  .text-tertiary {
+    color: $tertiary;
+  }
+}
