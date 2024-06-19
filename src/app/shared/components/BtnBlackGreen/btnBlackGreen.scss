@@ -5,22 +5,23 @@
 		font-size: 0.75rem;
 		--bs-btn-bg: none;
 		--bs-border-color: #{$tertiary};
+		min-width: 200px;
+		max-width: 260px;
 	}
 }
 
-
-
-@media (min-width: 768px) and (max-width:992px){
+@media (min-width: 768px) and (max-width: 992px) {
 	.btn-BG {
 		.btn.btn-primary {
 			font-size: 0.7rem;
 		}
 	}
 }
-@media (min-width: 993px){
-		.btn-BG {
+
+@media (min-width: 993px) {
+	.btn-BG {
 		.btn.btn-primary {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 }
