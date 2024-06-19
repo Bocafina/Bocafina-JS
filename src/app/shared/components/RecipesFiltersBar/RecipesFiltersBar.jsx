@@ -1,6 +1,6 @@
 import "./recipesFiltersBar.scss";
 
-import RecipesFiltersBtn from "./RecipesFiltersBtn/RecipesFiltersBtn";
+import RecipesFiltersBtn from "../RecipesFiltersBtn/RecipesFiltersBtn";
 
 const RecipesFiltersBar = () => {
   // exemple de fonction pour le tri à passer par le props
