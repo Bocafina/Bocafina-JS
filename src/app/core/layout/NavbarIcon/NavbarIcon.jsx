@@ -1,6 +1,6 @@
 import "./navbarIcon.scss";
 
-import * as navbarIcon from "../../../assets/svg/icon/_navbarIcon";
+import * as navbarIcon from "../../../../assets/svg/icon/_navbarIcon";
 
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { NavItem } from "react-bootstrap";

@@ -1,4 +1,4 @@
-import NavbarIcon from "../../../../components/common/NavbarIcon/NavbarIcon";
+import NavbarIcon from "../NavbarIcon/NavbarIcon";
 import "./navbarMobile.scss";
 
 import Nav from "react-bootstrap/Nav";

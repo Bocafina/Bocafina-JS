@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./BackButtonMobile.scss";
-import {leftArrowIcon} from "../../../assets/svg/icon/_icon";
+import { leftArrowIcon } from "../../../../assets/svg/icon/_icon";
 
 const BackButtonMobile = (props) => {
   return (

@@ -4,15 +4,18 @@ import { Container } from "react-bootstrap";
 import HomeScreen from "../modules/recipesFeed/screens/HomeScreen";
 import SearchScreen from "../modules/recipesSearch/screens/SearchScreen";
 import CookBookScreen from "../modules/cookBook/screens/CookBookScreen";
-import MenusScreen from "../modules/planner/screens/MenusScreen";
-import GroceriesScreen from "../../screen/GroceriesScreen";
-import RecipesScreen from "../../screen/RecipesScreen";
-import PageNotFound from "../../screen/PageNotFound";
+import MenusScreen from "../modules/planner/screens/PlannerScreen";
+import GroceriesScreen from "../modules/groceries/screens/GroceriesScreen";
+import ProfileScreen from "../modules/profile/screens/ProfileScreen";
+import RecipeScreen from "../modules/recipeDisplay/screens/RecipeScreen";
+
 import NavbarDesktop from "./layout/desktop/NavbarDesktop/NavbarDesktop";
-import ProfileScreen from "../../screen/ProfileScreen";
+import NavbarMobile from "./layout/NavbarMobile/NavbarMobile";
+
+import PageNotFound from "./screen/PageNotFound";
 import LoginScreen from "./screen/LoginScreen/LoginScreen";
 import CreateAccountScreen from "./screen/RegisterScreen/CreateAccountScreen";
-import NavbarMobile from "./layout/NavbarMobile/NavbarMobile";
+
 import Header from "./layout/desktop/Header/Header";
 
 function App() {
@@ -31,7 +34,7 @@ function App() {
               <Route path="/groceries" element={<GroceriesScreen />} />
 
               <Route path="/recipes">
-                <Route path=":recipe" element={<RecipesScreen />} />
+                <Route path=":recipe" element={<RecipeScreen />} />
               </Route>
 
               <Route path="/profiles">

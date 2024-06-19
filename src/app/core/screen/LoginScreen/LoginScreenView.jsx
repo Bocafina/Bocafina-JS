@@ -1,9 +1,9 @@
 import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic";
+import ProfilePic from "../../layout/ProfilePic/ProfilePic";
 import BtnBlackGreen from "../../../shared/components/BtnBlackGreen/BtnBlackGreen";
-import BackButtonMobile from "../../../../components/mobile/BackButton/BackButtonMobile";
+import BackButtonMobile from "../../../shared/components/BackButton/BackButtonMobile";
 
 import { settingsIcon } from "../../../../assets/svg/icon/_icon";
 import scratchGray from "/scratch-gray.png";

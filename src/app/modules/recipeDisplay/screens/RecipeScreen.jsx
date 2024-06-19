@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { homeScreenRecipesData } from "../data/homeScreenRecipesData";
+import { homeScreenRecipesData } from "../../../../data/homeScreenRecipesData";
 
-const RecipesScreen = () => {
+const RecipeScreen = () => {
   const { recipe } = useParams();
   const navigate = useNavigate();
 
@@ -24,4 +24,4 @@ const RecipesScreen = () => {
   );
 };
 
-export default RecipesScreen;
+export default RecipeScreen;

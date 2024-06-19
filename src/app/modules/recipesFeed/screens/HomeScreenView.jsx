@@ -2,8 +2,8 @@ import { Image, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import RecipesCardDisplay from "../../../shared/components/RecipesCardDisplay/RecipesCardDisplay";
-import Logo from "../../../../components/common/Logo/Logo.jsx";
-import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic.jsx";
+import Logo from "../../../core/layout/Logo/Logo.jsx";
+import ProfilePic from "../../../core/layout/ProfilePic/ProfilePic.jsx";
 import { notificationIcon } from "../../../../assets/svg/icon/_icon.js";
 
 import "./homeScreen.scss";

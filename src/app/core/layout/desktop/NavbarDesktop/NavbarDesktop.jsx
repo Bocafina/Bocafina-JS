@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./navbarDesktop.scss";
 
-import NavbarIcon from "../../../../../components/common/NavbarIcon/NavbarIcon";
-import Logo from "../../../../../components/common/Logo/Logo";
-import ProfilePic from "../../../../../components/common/ProfilePic/ProfilePic";
+import NavbarIcon from "../../NavbarIcon/NavbarIcon";
+import Logo from "../../Logo/Logo";
+import ProfilePic from "../../ProfilePic/ProfilePic";
 import Contact from "../Contact/Contact";
 import BtnBlackGreen from "../../../../shared/components/BtnBlackGreen/BtnBlackGreen";
 import SocialMedias from "../SocialMedias/SocialMedias";

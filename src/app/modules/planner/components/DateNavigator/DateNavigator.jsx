@@ -1,7 +1,7 @@
 import { Image, Row, Col } from "react-bootstrap";
 
-import useDateNavigator from "../../../app/modules/planner/hooks/useDateNavigator";
-import {leftArrowIcon , rightArrowIcon} from "../../../assets/svg/icon/_icon";
+import useDateNavigator from "../../hooks/useDateNavigator";
+import { leftArrowIcon, rightArrowIcon } from "../../../../../assets/svg/icon/_icon";
 
 
 import "./dateNavigator.scss";

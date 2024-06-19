@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import ThreeDotBtn from "../ThreeDotBtn/ThreeDotBtn";
-import ProfilePic from "../../../../components/common/ProfilePic/ProfilePic";
+import ProfilePic from "../../../core/layout/ProfilePic/ProfilePic";
 
 import { addCookBookIcon } from "../../../../assets/svg/icon/_icon";
 

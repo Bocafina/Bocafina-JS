@@ -1,9 +1,9 @@
-import DateNavigator from "../../../../components/common/DateNavigator/DateNavigator";
+import DateNavigator from "../components/DateNavigator/DateNavigator";
 import ListWrapper from "../components/ListWrapper/ListWrapper";
 
-import "./menusScreen.scss";
+import "./plannerScreen.scss";
 
-export default function MenusScreen() {
+export default function PlannerScreenView() {
   return (
     <>
       <div>
