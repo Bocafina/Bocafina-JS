@@ -25,13 +25,10 @@ body {
 	font-family: "Lato-Regular", sans-serif;
 }
 
-
-
 .app-container {
 	padding: 0.6em;
 	min-height: 100vh;
 }
-
 
 .row {
 	--bs-gutter-x: 0 !important;
@@ -46,6 +43,15 @@ h5 {
 .flex-between {
 	@extend %flex-between;
 }
+//media queries flex-between changed pour desktop
+@media (min-width: 768px) {
+  .desktopSearchFilters {
+    .flex-between {
+      justify-content:space-around
+    }
+}
+}
+
 
 //media queries container-fluid
 @media (min-width: 768px) {

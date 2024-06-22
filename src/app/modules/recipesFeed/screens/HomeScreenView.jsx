@@ -10,22 +10,22 @@ import "./homeScreen.scss";
 import BtnBlackGreen from "../../../shared/components/BtnBlackGreen/BtnBlackGreen.jsx";
 
 export default function HomeScreenView(props) {
-  let homeScreenRecipes = props.recipies;
+	let homeScreenRecipes = props.recipies;
 
-  const RecipesList = homeScreenRecipes.map((recipes) => (
-    <Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} key={recipes.id}>
-      <RecipesCardDisplay
-        to={recipes.recipeTitle}
-        isHomeScreen={true}
-        imageSrc={recipes.imageSrc}
-        profilName={recipes.profilName}
-        recipeTitle={recipes.recipeTitle}
-      />
-    </Col>
-  ));
-  // puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
+	const RecipesList = homeScreenRecipes.map((recipes) => (
+		<Col xs={12} sm={6} md={6} lg={4} xl={4} xxl={3} key={recipes.id}>
+			<RecipesCardDisplay
+				to={recipes.recipeTitle}
+				isHomeScreen={true}
+				imageSrc={recipes.imageSrc}
+				profilName={recipes.profilName}
+				recipeTitle={recipes.recipeTitle}
+			/>
+		</Col>
+	));
+	// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
 
-  return (
+	return (
 		<>
 			{/* écrans mobiles */}
 			<div className="d-md-none">
@@ -46,7 +46,7 @@ export default function HomeScreenView(props) {
 						</Link>
 					</div>
 				</div>
-				{RecipesList}
+				<Row>{RecipesList}</Row>
 			</div>
 
 			{/* écrans dekstop */}

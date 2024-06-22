@@ -1,7 +1,7 @@
 import imgTest from '/imgTest.png'
 
 
-const cookBookScreenReicipesData = [
+const cookbookScreenRecipesData = [
   {
     id: crypto.randomUUID(),
     imageSrc: imgTest,
@@ -58,4 +58,4 @@ const cookBookScreenReicipesData = [
   },
 ];
 
-export { cookBookScreenReicipesData };
+export { cookbookScreenRecipesData };

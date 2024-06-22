@@ -1,20 +1,20 @@
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
-import "./cookBookCardDisplay.scss";
+import "./cookbookCardDisplay.scss";
 
 import RecipesCardDisplay from "../../../../shared/components/RecipeCard/RecipeCard";
 
-const CookBookCardDisplay = (props) => {
-  const cookBookRecipies = props.recipies.map((recipes) => (
+const CookbookCardDisplay = (props) => {
+  const cookbookRecipes = props.recipes.map((recipes) => (
+    <Col xs={12} sm={6} md={6} lg={6} xl={4} xxl={3} key={recipes.id}>
     <RecipesCardDisplay
-      className="col-6"
       shadow="shadow-card"
-      key={recipes.id}
       hasHeader={false}
       imageSrc={recipes.imageSrc}
       profilName={recipes.profilName}
       recipeTitle={recipes.recipeTitle}
     />
+    </Col>
   ));
 
   return (
@@ -23,10 +23,10 @@ const CookBookCardDisplay = (props) => {
         <div className="d-flex text-secondary mx-2 mt-2">
           <h5>Mes recettes</h5>
         </div>
-        {cookBookRecipies}
+        {cookbookRecipes}
       </Row>
     </>
   );
 };
 
-export default CookBookCardDisplay;
+export default CookbookCardDisplay;
