@@ -12,7 +12,6 @@ export default function HomeScreen() {
   return (
     <>
     <HomeScreenView recipies={homeScreenRecipes}/>
-     
     </>
   );
 }

@@ -1,15 +1,15 @@
 import SearchScreenView from "./SearchScreenView.jsx";
 
-import { searchScreenRecipeData } from "../../../../data/searchScreenRecipeData.js";
+import { searchScreenRecipesData } from "../../../../data/searchScreenRecipesData.js";
 
 export default function SearchScreen() {
-  let Recipes = searchScreenRecipeData;
+	let Recipes = searchScreenRecipesData;
 
-  return (
-    <>
-      <SearchScreenView Recipes={Recipes} />
-    </>
-  );
+	return (
+		<>
+			<SearchScreenView Recipes={Recipes} />
+		</>
+	);
 }
 
-// puisque chaque RecipesCardDisplay a déjà une key unique, les fragments (<> </>) ne sont pas nécessaires ici
+

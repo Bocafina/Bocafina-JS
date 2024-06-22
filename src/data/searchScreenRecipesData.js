@@ -2,7 +2,7 @@
 import imgTest from '/imgTest.png'
 
 
-const searchScreenRecipeData = [
+const searchScreenRecipesData = [
   {
     id: crypto.randomUUID(),
     imageSrc: imgTest,
@@ -59,4 +59,4 @@ const searchScreenRecipeData = [
   },
 ];
 
-export { searchScreenRecipeData };
+export { searchScreenRecipesData };

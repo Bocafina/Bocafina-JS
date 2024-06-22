@@ -1,13 +1,13 @@
 
 
-import { cookBookScreenReicipesData } from "../../../../data/cookbookScreenRecipesData";
-import CookBookScreenView from "./CookBookScrennView";
+import { cookbookScreenRecipesData } from "../../../../data/cookbookScreenRecipesData";
+import CookbookScreenView from "./CookbookScreenView";
 
 export default function CookBookScreen() {
   return (
     <>
       <div>
-        <CookBookScreenView recipies={cookBookScreenReicipesData} />
+        <CookbookScreenView recipes={cookbookScreenRecipesData} />
       </div>
     </>
   );
