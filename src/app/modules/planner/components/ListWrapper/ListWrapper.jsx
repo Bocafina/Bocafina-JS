@@ -18,7 +18,7 @@ const ListWrapper = () => {
 		<>
 			<div className="accordionStyle">
 				<Accordion
-					className="bg-primary mt-4"
+					className="bg-primary"
 					defaultActiveKey="0"
 					flush
 					alwaysOpen
