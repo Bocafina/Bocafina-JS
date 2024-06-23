@@ -6,7 +6,7 @@ import RecipesCardDisplay from "../../../../shared/components/RecipeCard/RecipeC
 
 const CookbookCardDisplay = (props) => {
   const cookbookRecipes = props.recipes.map((recipes) => (
-    <Col xs={12} sm={6} md={6} lg={6} xl={4} xxl={3} key={recipes.id}>
+    <Col xs={6} sm={6} md={6} lg={6} xl={4} xxl={3} key={recipes.id}>
     <RecipesCardDisplay
       shadow="shadow-card"
       hasHeader={false}

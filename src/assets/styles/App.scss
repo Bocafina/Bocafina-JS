@@ -45,13 +45,12 @@ h5 {
 }
 //media queries flex-between changed pour desktop
 @media (min-width: 768px) {
-  .desktopSearchFilters {
-    .flex-between {
-      justify-content:space-around
-    }
+	.desktopSearchFilters {
+		.flex-between {
+			justify-content: space-around;
+		}
+	}
 }
-}
-
 
 //media queries container-fluid
 @media (min-width: 768px) {
@@ -70,13 +69,48 @@ h5 {
 // }
 // }
 
+//scrollbar style mobile
+html::-webkit-scrollbar {
+	width: 1vw;
+}
+html::-webkit-scrollbar-thumb {
+	background-color: $secondary;
+}
+html::-webkit-scrollbar-track {
+	background-color: #000;
+}
+
 @media (min-width: 768px) {
+	//aside/ header / content sizes + scrollbar style
+	html::-webkit-scrollbar {
+		width: 0.3vw;
+	}
+	html::-webkit-scrollbar-thumb {
+		background-color: $secondary;
+	}
+	html::-webkit-scrollbar-track {
+		background-color: #000;
+	}
 	aside {
-	width: 250px;
-	min-height: 98vh;
+		width: 250px;
+		min-height: 98vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	aside::-webkit-scrollbar {
+		width: 0.3vw;
+	}
+	aside::-webkit-scrollbar-thumb {
+		background-color: $secondary;
+	}
+	aside::-webkit-scrollbar-track {
+		background-color: $primary;
+	}
+
+	.app-header,
+	.app-content {
+		margin-left: 260px;
+		width: calc(100% - 260px);
+	}
 }
-.app-header, .app-content {
-	margin-left: 260px;
-	width: calc(100% - 260px);
-}
-}
+

@@ -1,14 +1,35 @@
 @import "../../../../../assets/styles/variables.scss";
 
 .bg-cookbook-display {
-  background-color: $primary;
+	background-color: $primary;
+	height: 70vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.bg-cookbook-display::-webkit-scrollbar {
+	width: 1vw;
+}
+.bg-cookbook-display::-webkit-scrollbar-thumb {
+	background-color: $secondary;
+}
+.bg-cookbook-display::-webkit-scrollbar-track {
+	background-color: #000;
+}
+
+@media (min-width: 768px) {
+	.bg-cookbook-display::-webkit-scrollbar {
+		width: 0.3vw;
+	}
 }
 
 .shadow-card {
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3), 0 16px 20px rgba(0, 0, 0, 0.3), 0 24px 30px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-in-out;
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3), 0 16px 20px rgba(0, 0, 0, 0.3),
+		0 24px 30px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 .shadow-card:hover {
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4), 0 20px 24px rgba(0, 0, 0, 0.4), 0 30px 36px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4), 0 20px 24px rgba(0, 0, 0, 0.4),
+		0 30px 36px rgba(0, 0, 0, 0.4);
 }

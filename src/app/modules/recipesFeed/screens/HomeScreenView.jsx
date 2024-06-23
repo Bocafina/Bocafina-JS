@@ -52,7 +52,7 @@ export default function HomeScreenView(props) {
 			{/* écrans dekstop */}
 			<div className="d-none d-md-block">
 				<Container>
-					<div className="my-5 p-5 text-secondary text-center d-flex align-items-center justify-content-center sizeWelcomeText">
+					<div className="my-3 p-5 text-secondary text-center d-flex align-items-center justify-content-center sizeWelcomeText">
 						Bienvenue sur Bocafina, votre compagnon culinaire pour des recettes
 						gourmandes et personnalisées !
 						<br />
@@ -61,7 +61,7 @@ export default function HomeScreenView(props) {
 						<br />
 						Bon appétit et à vos fourneaux !
 					</div>
-					<Row className="my-5 pb-5 d-flex align-items-center justify-content-center">
+					<Row className="my-3 pb-3 d-flex align-items-center justify-content-center">
 						<Col md={6} xxl={4} as={Link} to="/">
 							<BtnBlackGreen btnName="Envie de petit-déjeuner ?" />
 						</Col>

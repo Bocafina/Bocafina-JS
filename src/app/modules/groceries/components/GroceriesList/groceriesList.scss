@@ -1,16 +1,35 @@
 @import "../../../../../assets/styles/variables";
 
 .list-group p {
-  margin-bottom: 0.2rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
+	margin-bottom: 0.2rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
 }
 
 .bg-groceries-list {
-  background-color: $primary;
+	background-color: $primary;
+	height: 70vh;
+	overflow-y: auto;
+	overflow-x: hidden;
 
-  .list-group-item {
-    background-color: $primary;
-    border: none !important;
-  }
+	.list-group-item {
+		background-color: $primary;
+		border: none !important;
+	}
+}
+
+.bg-groceries-list::-webkit-scrollbar {
+	width: 1vw;
+}
+.bg-groceries-list::-webkit-scrollbar-thumb {
+	background-color: $secondary;
+}
+.bg-groceries-list::-webkit-scrollbar-track {
+	background-color: #000;
+}
+
+@media (min-width: 768px) {
+	.bg-groceries-list::-webkit-scrollbar {
+		width: 0.3vw;
+	}
 }
