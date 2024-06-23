@@ -17,12 +17,7 @@ const ListWrapper = () => {
 	return (
 		<>
 			<div className="accordionStyle">
-				<Accordion
-					className="bg-primary"
-					defaultActiveKey="0"
-					flush
-					alwaysOpen
-				>
+				<Accordion className="bg-primary" defaultActiveKey="0" flush alwaysOpen>
 					{daysOfWeek.map((day, index) => (
 						<Accordion.Item
 							key={index}
