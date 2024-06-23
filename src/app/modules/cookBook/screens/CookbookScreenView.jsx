@@ -1,8 +1,8 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import SearchBar from "../../../shared/components/SearchBarMobile/SearchBarMobile";
 import RecipesFiltersBar from "../../../shared/components/RecipesFiltersBar/RecipesFiltersBar";
-import CookBookCardDisplay from "../components/CookBookCardDisplay/CookbookCardDisplay";
+import CookbookCardDisplay from "../components/CookbookCardDisplay/CookbookCardDisplay";
 import BtnBlackGreen from "../../../shared/components/BtnBlackGreen/BtnBlackGreen";
 
 export default function CookbookScreenView(props) {
@@ -12,7 +12,7 @@ export default function CookbookScreenView(props) {
 			<div className="d-md-none">
 				<SearchBar />
 				<RecipesFiltersBar />
-				<CookBookCardDisplay recipes={props.recipes} />
+				<CookbookCardDisplay recipes={props.recipes} />
 				<BtnBlackGreen btnName="ajouter une recette" />
 			</div>
 
@@ -20,7 +20,7 @@ export default function CookbookScreenView(props) {
 			<div className="d-none d-md-block">
 				<Container className="pt-5">
 					<section>
-						<CookBookCardDisplay recipes={props.recipes} />
+						<CookbookCardDisplay recipes={props.recipes} />
 					</section>
 				</Container>
 			</div>

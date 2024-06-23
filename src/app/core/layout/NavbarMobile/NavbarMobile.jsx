@@ -10,7 +10,7 @@ const NavbarMobile = () => {
         <Nav className="justify-content-around align-items-baseline">
           <NavbarIcon icon="home" name="Acceuil" to="/" />
           <NavbarIcon icon="search" name="Recherche" to="/search" />
-          <NavbarIcon icon="cookbook" name="CookBook" to="/cookbook" />
+          <NavbarIcon icon="cookbook" name="Cookbook" to="/cookbook" />
           <NavbarIcon icon="menus" name="Planner" to="/planner" />
           <NavbarIcon icon="groceries" name="Courses" to="/groceries" />
         </Nav>

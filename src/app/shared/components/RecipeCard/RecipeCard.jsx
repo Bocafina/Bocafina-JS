@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ThreeDotBtn from "../ThreeDotBtn/ThreeDotBtn";
 import ProfilePic from "../../../core/layout/ProfilePic/ProfilePic";
 
-import { addCookBookIcon } from "../../../../assets/svg/icon/_icon";
+import { addCookbookIcon } from "../../../../assets/svg/icon/_icon";
 
 import "./recipeCard.scss";
 
@@ -49,7 +49,7 @@ const RecipesCardDisplay = (props) => {
               <div className="recipes-card-section flex-between">
                 <h5 className="text-secondary">{props.recipeTitle}</h5>
                 <button>
-                  <img src={addCookBookIcon} alt="addCookBook" />
+                  <img src={addCookbookIcon} alt="addCookbook" />
                 </button>
               </div>
             </Card.Footer>
