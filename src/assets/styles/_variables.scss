@@ -1,14 +1,17 @@
 //dark mode only pour le moment
 
 // couleurs de fond
-$primary : #222121;
+$primary: #222121;
 
 // couleurs de texte
-$secondary: #A69E9E;
+$secondary: #a69e9e;
 
 // couleurs de hover, liens actifs ou border
-$tertiary: #54B435;
+$tertiary: #54b435;
 
 
 
 
+
+// 	interpolation (#{}) nécessaire quand variable :
+//  ex. : 	--bs-list-group-border-color: #{$secondary} !important;

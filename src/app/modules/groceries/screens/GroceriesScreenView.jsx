@@ -8,11 +8,12 @@ export default function GroceriesScreenView(props) {
 		<>
 			{/* écrans mobiles */}
 			<div className="d-md-none">
-				<h4 className="text-secondary mt-3 mb-4">Liste de courses</h4>
+				<h4 className="text-secondary mt-3 mb-2">Liste de courses</h4>
+				<BtnBlackGreen btnName="ajouter un ingrédient" />
 				<div className="mx-1">
 					<GroceriesList ingredients={props.ingredients} />
 				</div>
-				<BtnBlackGreen btnName="ajouter un ingrédient" />
+				
 			</div>
 
 			{/* écrans dekstop */}

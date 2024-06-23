@@ -9,7 +9,9 @@ export default function PlannerScreenView() {
 			{/* écrans mobiles */}
 			<div className="d-md-none">
 				<h4 className="text-secondary my-3">Planificateur de repas</h4>
-				<DateNavigator />
+				<div className="mb-3">
+					<DateNavigator />
+				</div>
 				<div className="mx-1">
 					<ListWrapper />
 				</div>
@@ -21,7 +23,7 @@ export default function PlannerScreenView() {
 					<h4 className="text-secondary text-center my-3">
 						Planificateur de repas
 					</h4>
-					<Row className="mx-5">
+					<Row className="mx-5 mb-3">
 						<DateNavigator />
 					</Row>
 					<Row className="mx-5">

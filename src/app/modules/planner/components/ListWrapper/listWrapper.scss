@@ -1,8 +1,54 @@
 @import "../../../../../assets/styles/variables.scss";
 
-.listGroupColor {
-  .list-group {
-	// interpolation (#{}) nécessaire ici car variable
-	--bs-list-group-border-color: #{$secondary} !important;
+.accordionStyle {
+	max-height: 81vh; // taille à vérif mais si +, scroll disparait...
+	overflow-y: auto;
+	overflow-x: hidden;
+	// scrollbar on accordion mobile
+	&::-webkit-scrollbar {
+		width: 1vw;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $secondary;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #000;
+	}
+
+	.accordion {
+		--bs-accordion-border-color: #{$secondary};
+
+		.accordion-flush {
+			// Ajout de border-radius aux coins
+			// border-radius: 20px;
+			border-top-left-radius: 20px;
+			// border-top-right-radius: 20px;
+			// border-bottom-left-radius: 20px;
+			// border-bottom-right-radius: 20px;
+		}
+		.accordion-header {
+			//style qd accordéon fermé
+			.accordion-button.collapsed {
+				color: $secondary;
+				background-color: $primary;
+			}
+
+			//style qd accordéon ouvert
+			.accordion-button:not(.collapsed) {
+				color: $primary;
+				background-color: $secondary;
+			}
+		}
+		.accordion-item,
+		.accordion-body {
+			color: $secondary;
+			background-color: $primary;
+		}
+	}
 }
+
+@media (min-width: 768px) {
+	.accordionStyle::-webkit-scrollbar {
+		width: 0.3vw;
+	}
 }

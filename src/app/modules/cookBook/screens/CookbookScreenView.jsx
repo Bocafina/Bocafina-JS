@@ -12,8 +12,10 @@ export default function CookbookScreenView(props) {
 			<div className="d-md-none">
 				<SearchBar />
 				<RecipesFiltersBar />
-				<CookbookCardDisplay recipes={props.recipes} />
 				<BtnBlackGreen btnName="ajouter une recette" />
+				<div className="mx-1">
+					<CookbookCardDisplay recipes={props.recipes} />
+				</div>
 			</div>
 
 			{/* écrans dekstop */}
